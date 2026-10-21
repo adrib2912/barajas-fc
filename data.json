@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T09:49:49.799Z",
+ "actualizado": "2026-10-21T09:52:50.199Z",
  "lunes": "2026-10-19",
  "equipos": [
   {
@@ -2855,7 +2855,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576119648
+   "t": 1792576339045
   },
   "https://www.rffm.es/acta-partido/5697451?temporada=22&competicion=26738230&grupo=26738231": {
    "fecha": "2026-11-07",
@@ -2863,7 +2863,7 @@
    "campo": "ALCALA - COLEGIO SAN GABRIEL (HA)",
    "casa": "S.A.D. COLEGIO SAN GABRIEL",
    "of": false,
-   "t": 1792576138533
+   "t": 1792576346289
   },
   "https://www.rffm.es/acta-partido/5587330?temporada=22&competicion=26737706&grupo=26737710": {
    "fecha": "2026-10-18",
@@ -3023,7 +3023,7 @@
    "campo": "TORREJÓN DE ARDOZ - 'GUTI' (HA)",
    "casa": "A.D. JUVENTUD TORREJON 'B'",
    "of": false,
-   "t": 1792576110960
+   "t": 1792576336690
   },
   "https://www.rffm.es/acta-partido/5653198?temporada=22&competicion=26737768&grupo=26737787": {
    "fecha": "2026-10-31",
@@ -3031,7 +3031,7 @@
    "campo": "TORREJÓN DE ARDOZ - 'GUTI' (HA)",
    "casa": "A.D. JUVENTUD TORREJON 'E'",
    "of": false,
-   "t": 1792576111556
+   "t": 1792576336987
   },
   "https://www.rffm.es/acta-partido/5661200?temporada=22&competicion=26737768&grupo=26737786": {
    "fecha": "2026-10-31",
@@ -3039,7 +3039,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'C'",
    "of": false,
-   "t": 1792576114338
+   "t": 1792576337323
   },
   "https://www.rffm.es/acta-partido/5605901?temporada=22&competicion=26737819&grupo=26737822": {
    "fecha": "2026-10-31",
@@ -3047,7 +3047,7 @@
    "campo": "ALCALA - RECINTO FERIAL (HA)",
    "casa": "A.D. COMPLUTENSE ALCALA 'C'",
    "of": false,
-   "t": 1792576115285
+   "t": 1792576337580
   },
   "https://www.rffm.es/acta-partido/5668310?temporada=22&competicion=26738324&grupo=26738345": {
    "fecha": "2026-10-31",
@@ -3055,7 +3055,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576115834
+   "t": 1792576337878
   },
   "https://www.rffm.es/acta-partido/5702002?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-10-31",
@@ -3063,7 +3063,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'C'",
    "of": false,
-   "t": 1792576116926
+   "t": 1792576338168
   },
   "https://www.rffm.es/acta-partido/5649698?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-10-31",
@@ -3071,7 +3071,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'D'",
    "of": false,
-   "t": 1792576117638
+   "t": 1792576338454
   },
   "https://www.rffm.es/acta-partido/5618299?temporada=22&competicion=26738141&grupo=26738156": {
    "fecha": "2026-10-31",
@@ -3079,7 +3079,7 @@
    "campo": "SAN ROQUE (HA)",
    "casa": "C.D. SAN ROQUE E.F.F. 'A'",
    "of": false,
-   "t": 1792576119011
+   "t": 1792576338747
   },
   "https://www.rffm.es/acta-partido/5681574?temporada=22&competicion=26737881&grupo=26737883": {
    "fecha": "2026-10-31",
@@ -3087,7 +3087,7 @@
    "campo": "COSLADA - BARRIO DEL PUERTO (HA)",
    "casa": "C.D. SAMPER - MADRID CITY COSLADA",
    "of": false,
-   "t": 1792576119915
+   "t": 1792576339350
   },
   "https://www.rffm.es/acta-partido/5703389?temporada=22&competicion=26737890&grupo=26737893": {
    "fecha": "2026-10-31",
@@ -3095,7 +3095,7 @@
    "campo": "VILLAR DEL OLMO (HA)",
    "casa": "C.D. UNION DEPORTIVA VILLAR DEL OLMO",
    "of": false,
-   "t": 1792576120346
+   "t": 1792576339602
   },
   "https://www.rffm.es/acta-partido/5725441?temporada=22&competicion=26737899&grupo=26750861": {
    "fecha": "2026-10-31",
@@ -3103,7 +3103,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576121339
+   "t": 1792576339965
   },
   "https://www.rffm.es/acta-partido/5587347?temporada=22&competicion=26737706&grupo=26737710": {
    "fecha": "2026-11-01",
@@ -3111,7 +3111,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576122199
+   "t": 1792576340329
   },
   "https://www.rffm.es/acta-partido/5582525?temporada=22&competicion=26737718&grupo=26737721": {
    "fecha": "2026-11-01",
@@ -3119,7 +3119,7 @@
    "campo": "PARACUELLOS - ESTADIO MUNICIPAL (HA)",
    "casa": "SAD COLEGIO MIRAMADRID - PARACUELLOS 'A'",
    "of": false,
-   "t": 1792576123192
+   "t": 1792576340778
   },
   "https://www.rffm.es/acta-partido/5613341?temporada=22&competicion=26737724&grupo=26737731": {
    "fecha": "2026-11-01",
@@ -3127,7 +3127,7 @@
    "campo": "ALCALA - ISIDRO CEDIEL (HA)",
    "casa": "A.D. NAYA 'B'",
    "of": false,
-   "t": 1792576123732
+   "t": 1792576341461
   },
   "https://www.rffm.es/acta-partido/5716196?temporada=22&competicion=26797573&grupo=28150806": {
    "fecha": "2026-11-06",
@@ -3143,7 +3143,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576123987
+   "t": 1792576341934
   },
   "https://www.rffm.es/acta-partido/5653205?temporada=22&competicion=26737768&grupo=26737787": {
    "fecha": "2026-11-07",
@@ -3159,7 +3159,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'C'",
    "of": false,
-   "t": 1792576124471
+   "t": 1792576342346
   },
   "https://www.rffm.es/acta-partido/5605916?temporada=22&competicion=26737819&grupo=26737822": {
    "fecha": "2026-11-07",
@@ -3167,7 +3167,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576124956
+   "t": 1792576343478
   },
   "https://www.rffm.es/acta-partido/5668316?temporada=22&competicion=26738324&grupo=26738345": {
    "fecha": "2026-11-07",
@@ -3175,7 +3175,7 @@
    "campo": "SPARTAC MANOTERAS (HA)",
    "casa": "C.D. SPARTAC DE MANOTERAS 'C'",
    "of": false,
-   "t": 1792576125343
+   "t": 1792576344074
   },
   "https://www.rffm.es/acta-partido/5665143?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-11-07",
@@ -3183,7 +3183,7 @@
    "campo": "TRIVEMA NAVAL (HA)",
    "casa": "C.D. TRIVEMA NAVAL 'C'",
    "of": false,
-   "t": 1792576126783
+   "t": 1792576344608
   },
   "https://www.rffm.es/acta-partido/5649704?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-11-07",
@@ -3191,7 +3191,7 @@
    "campo": "PARACUELLOS - PVO. MUNICIPAL (HA)",
    "casa": "C.D. PARACUELLOS SPORT 'C'",
    "of": false,
-   "t": 1792576127324
+   "t": 1792576345179
   },
   "https://www.rffm.es/acta-partido/5618306?temporada=22&competicion=26738141&grupo=26738156": {
    "fecha": "2026-11-07",
@@ -3199,7 +3199,7 @@
    "campo": null,
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576130304
+   "t": 1792576345937
   },
   "https://www.rffm.es/acta-partido/5690225?temporada=22&competicion=26738071&grupo=26738074": {
    "fecha": "2026-11-07",
@@ -3223,7 +3223,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576140467
+   "t": 1792576346703
   },
   "https://www.rffm.es/acta-partido/5703395?temporada=22&competicion=26737890&grupo=26737893": {
    "fecha": "2026-11-07",
@@ -3231,7 +3231,7 @@
    "campo": "ALCALA - FELIPE DE LUCAS 'PIPE' (HA)",
    "casa": "C.D. AVANCE 'A'",
    "of": false,
-   "t": 1792576141817
+   "t": 1792576347167
   },
   "https://www.rffm.es/acta-partido/5725447?temporada=22&competicion=26737899&grupo=26750861": {
    "fecha": "2026-11-07",
@@ -3255,7 +3255,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576143616
+   "t": 1792576347495
   },
   "https://www.rffm.es/acta-partido/5582534?temporada=22&competicion=26737718&grupo=26737721": {
    "fecha": "2026-11-08",
@@ -3263,7 +3263,7 @@
    "campo": "CAMPO NUEVO VILLA ROSA (HA)",
    "casa": "A.D. VILLA ROSA 'A'",
    "of": false,
-   "t": 1792576144323
+   "t": 1792576347754
   },
   "https://www.rffm.es/acta-partido/5613350?temporada=22&competicion=26737724&grupo=26737731": {
    "fecha": "2026-11-08",
@@ -3271,7 +3271,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576144908
+   "t": 1792576348118
   },
   "https://www.rffm.es/acta-partido/5596018?temporada=22&competicion=26738066&grupo=26738068": {
    "fecha": "2026-10-24",
@@ -3311,7 +3311,7 @@
    "campo": "CIUDAD REAL MADRID 4 (HA)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576129014
+   "t": 1792576345499
   },
   "https://www.rffm.es/acta-partido/5604589?temporada=22&competicion=26738158&grupo=26738163": {
    "fecha": "2026-11-07",
@@ -3359,7 +3359,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576146266
+   "t": 1792576348653
   },
   "https://www.rffm.es/acta-partido/5661215?temporada=22&competicion=26737768&grupo=26737786": {
    "fecha": "2026-11-14",
@@ -3367,7 +3367,7 @@
    "campo": "SAN FERNANDO - SANTIAGO DEL PINO (HA)",
    "casa": "A.D. SPORTING SAN FERNANDO DE HENARES 'B'",
    "of": false,
-   "t": 1792576146879
+   "t": 1792576348938
   },
   "https://www.rffm.es/acta-partido/5605917?temporada=22&competicion=26737819&grupo=26737822": {
    "fecha": "2026-11-14",
@@ -3375,7 +3375,7 @@
    "campo": "ALCALA - FELIPE DE LUCAS 'PIPE' (HA)",
    "casa": "C.D. AVANCE 'A'",
    "of": false,
-   "t": 1792576147307
+   "t": 1792576349339
   },
   "https://www.rffm.es/acta-partido/5668323?temporada=22&competicion=26738324&grupo=26738345": {
    "fecha": "2026-11-14",
@@ -3383,7 +3383,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576149270
+   "t": 1792576349703
   },
   "https://www.rffm.es/acta-partido/5665150?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-11-14",
@@ -3391,7 +3391,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'C'",
    "of": false,
-   "t": 1792576150317
+   "t": 1792576349993
   },
   "https://www.rffm.es/acta-partido/5649711?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-11-14",
@@ -3399,7 +3399,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'D'",
    "of": false,
-   "t": 1792576151543
+   "t": 1792576350365
   },
   "https://www.rffm.es/acta-partido/5596041?temporada=22&competicion=26738066&grupo=26738068": {
    "fecha": "2026-11-14",
@@ -3407,7 +3407,7 @@
    "campo": "RIVAS - POLÍGONO SANTA ANA (HA)",
    "casa": "RIVAS FUTBOL CLUB 'A'",
    "of": false,
-   "t": 1792576152418
+   "t": 1792576350742
   },
   "https://www.rffm.es/acta-partido/5618314?temporada=22&competicion=26738141&grupo=26738156": {
    "fecha": "2026-11-14",
@@ -3415,7 +3415,7 @@
    "campo": null,
    "casa": "A.D. SPORTING HORTALEZA 'D'",
    "of": false,
-   "t": 1792576153078
+   "t": 1792576351312
   },
   "https://www.rffm.es/acta-partido/5690230?temporada=22&competicion=26738071&grupo=26738074": {
    "fecha": "2026-11-14",
@@ -3471,7 +3471,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576157899
+   "t": 1792576352587
   },
   "https://www.rffm.es/acta-partido/5681589?temporada=22&competicion=26737881&grupo=26737883": {
    "fecha": "2026-11-14",
@@ -3479,7 +3479,7 @@
    "campo": "ALCALA - FELIPE DE LUCAS 'PIPE' (HA)",
    "casa": "C.D. AVANCE",
    "of": false,
-   "t": 1792576158862
+   "t": 1792576353254
   },
   "https://www.rffm.es/acta-partido/5703401?temporada=22&competicion=26737890&grupo=26737893": {
    "fecha": "2026-11-14",
@@ -3487,7 +3487,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576159146
+   "t": 1792576354229
   },
   "https://www.rffm.es/acta-partido/5725454?temporada=22&competicion=26737899&grupo=26750861": {
    "fecha": "2026-11-14",
@@ -3495,7 +3495,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576159524
+   "t": 1792576354764
   },
   "https://www.rffm.es/acta-partido/5727352?temporada=22&competicion=26738057&grupo=26738060": {
    "fecha": "2026-11-14",
@@ -3519,7 +3519,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576161700
+   "t": 1792576355341
   },
   "https://www.rffm.es/acta-partido/5613360?temporada=22&competicion=26737724&grupo=26737731": {
    "fecha": "2026-11-15",
@@ -3527,7 +3527,7 @@
    "campo": "BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA)",
    "casa": "C.D. NUEVO BOADILLA 'H'",
    "of": false,
-   "t": 1792576162093
+   "t": 1792576355895
   },
   "https://www.rffm.es/acta-partido/5716207?temporada=22&competicion=26797573&grupo=28150806": {
    "fecha": "2026-11-20",
@@ -3543,7 +3543,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576162912
+   "t": 1792576357154
   },
   "https://www.rffm.es/acta-partido/5653218?temporada=22&competicion=26737768&grupo=26737787": {
    "fecha": "2026-11-21",
@@ -3551,7 +3551,7 @@
    "campo": "SAN ROQUE (HA)",
    "casa": "C.D. SAN ROQUE E.F.F. 'B'",
    "of": false,
-   "t": 1792576163329
+   "t": 1792576358102
   },
   "https://www.rffm.es/acta-partido/5661222?temporada=22&competicion=26737768&grupo=26737786": {
    "fecha": "2026-11-21",
@@ -3559,7 +3559,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'C'",
    "of": false,
-   "t": 1792576164215
+   "t": 1792576358980
   },
   "https://www.rffm.es/acta-partido/5605932?temporada=22&competicion=26737819&grupo=26737822": {
    "fecha": "2026-11-21",
@@ -3567,7 +3567,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576164635
+   "t": 1792576359579
   },
   "https://www.rffm.es/acta-partido/5668329?temporada=22&competicion=26738324&grupo=26738345": {
    "fecha": "2026-11-21",
@@ -3575,7 +3575,7 @@
    "campo": "OÑA - SANCHINARRO (HA)",
    "casa": "A.D. OÑA SANCHINARRO 'D'",
    "of": false,
-   "t": 1792576165147
+   "t": 1792576360243
   },
   "https://www.rffm.es/acta-partido/5665157?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-11-21",
@@ -3583,7 +3583,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'C'",
    "of": false,
-   "t": 1792576166229
+   "t": 1792576360943
   },
   "https://www.rffm.es/acta-partido/5649717?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-11-21",
@@ -3591,7 +3591,7 @@
    "campo": "ANTONIO PALACIOS (HA)",
    "casa": "C.D. CANILLEJAS C.F. 'A'",
    "of": false,
-   "t": 1792576167992
+   "t": 1792576361292
   },
   "https://www.rffm.es/acta-partido/5596048?temporada=22&competicion=26738066&grupo=26738068": {
    "fecha": "2026-11-21",
@@ -3599,7 +3599,7 @@
    "campo": "CIUDAD REAL MADRID 4 (HA)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576168557
+   "t": 1792576361753
   },
   "https://www.rffm.es/acta-partido/5618321?temporada=22&competicion=26738141&grupo=26738156": {
    "fecha": "2026-11-21",
@@ -3607,7 +3607,7 @@
    "campo": null,
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576169089
+   "t": 1792576362296
   },
   "https://www.rffm.es/acta-partido/5701941?temporada=22&competicion=26738071&grupo=26738074": {
    "fecha": "2026-11-21",
@@ -3663,7 +3663,7 @@
    "campo": "LAS ROZAS - RECINTO FERIAL (HA)",
    "casa": "CDB FUTBOL FEMENINO OLYMPIA LAS ROZAS",
    "of": false,
-   "t": 1792576172747
+   "t": 1792576362614
   },
   "https://www.rffm.es/acta-partido/5681596?temporada=22&competicion=26737881&grupo=26737883": {
    "fecha": "2026-11-21",
@@ -3671,7 +3671,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576174123
+   "t": 1792576363122
   },
   "https://www.rffm.es/acta-partido/5703406?temporada=22&competicion=26737890&grupo=26737893": {
    "fecha": "2026-11-21",
@@ -3679,7 +3679,7 @@
    "campo": "ALCALA - COLEGIO ESCUELAS PÍAS (H.A.)",
    "casa": "C.D. ESCOLAPIOS ALCALA",
    "of": false,
-   "t": 1792576174878
+   "t": 1792576363375
   },
   "https://www.rffm.es/acta-partido/5727357?temporada=22&competicion=26738057&grupo=26738060": {
    "fecha": "2026-11-21",
@@ -3695,7 +3695,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576175965
+   "t": 1792576363630
   },
   "https://www.rffm.es/acta-partido/5582551?temporada=22&competicion=26737718&grupo=26737721": {
    "fecha": "2026-11-22",
@@ -3711,7 +3711,7 @@
    "campo": "COSLADA - BARRIO DEL PUERTO (HA)",
    "casa": "C.D. SAMPER - MADRID CITY COSLADA 'B'",
    "of": false,
-   "t": 1792576176902
+   "t": 1792576363967
   },
   "https://www.rffm.es/acta-partido/5716213?temporada=22&competicion=26797573&grupo=28150806": {
    "fecha": "2026-11-27",
@@ -3727,7 +3727,7 @@
    "campo": "ALCALA - ISIDRO CEDIEL (HA)",
    "casa": "A.D. NAYA 'A'",
    "of": false,
-   "t": 1792576177753
+   "t": 1792576364883
   },
   "https://www.rffm.es/acta-partido/5653225?temporada=22&competicion=26737768&grupo=26737787": {
    "fecha": "2026-11-28",
@@ -3735,7 +3735,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576179057
+   "t": 1792576365616
   },
   "https://www.rffm.es/acta-partido/5661230?temporada=22&competicion=26737768&grupo=26737786": {
    "fecha": "2026-11-28",
@@ -3743,7 +3743,7 @@
    "campo": "SAN ROQUE (HA)",
    "casa": "C.D. SAN ROQUE E.F.F. 'C'",
    "of": false,
-   "t": 1792576180199
+   "t": 1792576365973
   },
   "https://www.rffm.es/acta-partido/5668336?temporada=22&competicion=26738324&grupo=26738345": {
    "fecha": "2026-11-28",
@@ -3751,7 +3751,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576180483
+   "t": 1792576366374
   },
   "https://www.rffm.es/acta-partido/5665165?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-11-28",
@@ -3759,7 +3759,7 @@
    "campo": "OLÍMPICO HORTALEZA - LAS CÁRCAVAS (HA)",
    "casa": "C.D. OLIMPICO DE HORTALEZA 'D'",
    "of": false,
-   "t": 1792576180867
+   "t": 1792576366720
   },
   "https://www.rffm.es/acta-partido/5649724?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-11-28",
@@ -3767,7 +3767,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'D'",
    "of": false,
-   "t": 1792576181261
+   "t": 1792576367116
   },
   "https://www.rffm.es/acta-partido/5596056?temporada=22&competicion=26738066&grupo=26738068": {
    "fecha": "2026-11-28",
@@ -3839,7 +3839,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576185238
+   "t": 1792576367653
   },
   "https://www.rffm.es/acta-partido/5681604?temporada=22&competicion=26737881&grupo=26737883": {
    "fecha": "2026-11-28",
@@ -3847,7 +3847,7 @@
    "campo": "S.S. REYES - GABRIEL PEDREGAL 1 (HA) ANT. DEHESA VIEJA",
    "casa": "JUVENTUD SANSE 'B'",
    "of": false,
-   "t": 1792576185775
+   "t": 1792576368190
   },
   "https://www.rffm.es/acta-partido/5703412?temporada=22&competicion=26737890&grupo=26737893": {
    "fecha": "2026-11-28",
@@ -3855,7 +3855,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS",
    "of": false,
-   "t": 1792576186566
+   "t": 1792576368712
   },
   "https://www.rffm.es/acta-partido/5725469?temporada=22&competicion=26737899&grupo=26750861": {
    "fecha": "2026-11-28",
@@ -3863,7 +3863,7 @@
    "campo": "I.D.B. SAN PASCUAL (HA)",
    "casa": "A.D. SAN PASCUAL-MONTPELLIER",
    "of": false,
-   "t": 1792576187440
+   "t": 1792576369016
   },
   "https://www.rffm.es/acta-partido/5727363?temporada=22&competicion=26738057&grupo=26738060": {
    "fecha": "2026-11-28",
@@ -3879,7 +3879,7 @@
    "campo": "ALCALA - ESPARTALES (HA)",
    "casa": "S.A.D. ESPARTALES SUR 'A'",
    "of": false,
-   "t": 1792576188430
+   "t": 1792576369356
   },
   "https://www.rffm.es/acta-partido/5582560?temporada=22&competicion=26737718&grupo=26737721": {
    "fecha": "2026-11-29",
@@ -3887,7 +3887,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'A'",
    "of": false,
-   "t": 1792576189032
+   "t": 1792576369787
   },
   "https://www.rffm.es/acta-partido/5613378?temporada=22&competicion=26737724&grupo=26737731": {
    "fecha": "2026-11-29",
@@ -3895,7 +3895,7 @@
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "casa": "C.D. BARAJAS 'B'",
    "of": false,
-   "t": 1792576189797
+   "t": 1792576370196
   }
  }
 }
