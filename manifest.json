@@ -1,0 +1,13 @@
+{
+  "name": "Bar C.D. Barajas",
+  "short_name": "Bar Barajas",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "escudo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "escudo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
