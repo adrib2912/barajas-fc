@@ -32,7 +32,7 @@ const diaSemana = (iso) => { const [y, m, d] = iso.split("-").map(Number); retur
 const HOY = hoyMadrid();
 const LUNES = sumaDias(HOY, -((diaSemana(HOY) + 6) % 7));
 const DESDE = sumaDias(LUNES, -1);   // por si alguna jornada lleva fecha de domingo anterior
-const HASTA = sumaDias(LUNES, 20);   // este fin de semana y los dos siguientes
+const HASTA = sumaDias(LUNES, 41);   // este fin de semana y los cinco siguientes
 // La RFFM publica los horarios oficiales el lunes de la semana del partido a las 9:00
 function yaOficial(fecha) {
   if (!fecha) return false;

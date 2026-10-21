@@ -137,6 +137,40 @@ h2{font:700 22px/1.2 var(--font);margin:26px 4px 8px;letter-spacing:-.01em}
 .group{margin-bottom:14px}
 .dayh{font:700 20px/1.2 var(--font);margin:22px 4px 8px;letter-spacing:-.01em}
 .dayh span{font-weight:500;color:var(--ink2);font-size:15px;margin-left:6px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand img{width:52px;height:52px;object-fit:contain;flex:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+.brand h1{margin:0}
+.day .otro{font-size:13px;color:var(--ink2);margin-top:2px}
+.cell.otro .hr,.cell.otro .ttl{color:var(--ink2)}
+.tag.otro{background:color-mix(in srgb,var(--blue) 16%,transparent);color:var(--blue)}
+/* Calendario del mes */
+.cal{background:var(--card);border-radius:16px;padding:8px}
+.cal .mt{text-align:center;font-weight:700;font-size:17px;padding:4px 0 6px;text-transform:capitalize}
+.cal .dow,.cal .days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.cal .dow span{text-align:center;font-size:11px;font-weight:600;color:var(--ink2);padding:4px 0;text-transform:uppercase}
+.cal .dow span:nth-child(n+6){color:var(--ink)}
+.cd{min-height:58px;border-radius:10px;padding:4px 2px;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;width:100%}
+.cd .n{font-size:13px;font-variant-numeric:tabular-nums;color:var(--ink2);width:22px;height:22px;display:grid;place-items:center}
+.cd.out{opacity:.3}
+.cd.today .n{background:var(--red);color:#fff;border-radius:50%;font-weight:700}
+.cd.we{background:color-mix(in srgb,var(--fill) 60%,transparent)}
+.cd.game{background:var(--yellow);color:#111}
+.cd.game .n{color:#111;font-weight:700}
+.cd.sel{box-shadow:inset 0 0 0 2px var(--ink)}
+.cd .x{font-size:10px;font-weight:700;line-height:1.1}
+.cd .x.r{color:var(--ink2);font-weight:500}
+.calleg{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ink2);margin:10px 4px 0}
+.calleg i{display:inline-block;width:14px;height:12px;border-radius:4px;margin-right:4px;vertical-align:-2px}
+/* Agenda del fin de semana en la Soledad */
+.ag{background:var(--card);border-radius:16px;padding:12px 10px 10px 0;display:flex;margin-top:4px}
+.ag .hrs{width:40px;flex:none;position:relative}
+.ag .hrs span{position:absolute;right:6px;font-size:10.5px;color:var(--ink3);transform:translateY(-50%);font-variant-numeric:tabular-nums}
+.ag .col{flex:1;min-width:0;border-left:.5px solid var(--sep)}
+.ag .ch{text-align:center;font-size:12px;font-weight:700;color:var(--ink2);text-transform:uppercase;height:22px}
+.ag .body{position:relative;background-image:linear-gradient(var(--sep) .5px,transparent .5px);background-size:100% 36px}
+.ag .ev{position:absolute;border-radius:7px;background:var(--yellow);color:#111;padding:3px 4px;overflow:hidden;font-size:10.5px;line-height:1.15;border:1.5px solid var(--card)}
+.ag .ev b{display:block;font:700 11px var(--round)}
+.ag .ev.prov{background:color-mix(in srgb,var(--yellow) 45%,var(--card));color:var(--ink)}
 .foot{font-size:12px;color:var(--ink3);text-align:center;margin:22px 0 0}
 .hb{width:38px;height:38px;border-radius:50%;background:var(--card);display:grid;place-items:center;color:var(--blue);flex:none}
 </style>
@@ -144,8 +178,7 @@ h2{font:700 22px/1.2 var(--font);margin:26px 4px 8px;letter-spacing:-.01em}
 <body>
 <div class="wrap">
   <header>
-    <div class="sub">C.D. Barajas · Bar</div>
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px"><h1 id="title">En casa</h1>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px"><div class="brand"><img src="escudo-barajas.png" alt="C.D. Barajas"><div><div class="sub">C.D. Barajas · Bar</div><h1 id="title">Local</h1></div></div>
     <div style="display:flex;gap:8px"><button id="ajustes" aria-label="Ajustes" class="hb"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
     <button id="reload" aria-label="Actualizar" class="hb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></button></div></div>
     <div id="stale" hidden></div>
@@ -177,8 +210,9 @@ h2{font:700 22px/1.2 var(--font);margin:26px 4px 8px;letter-spacing:-.01em}
 </div></div>
 
 <nav class="tabs" role="tablist"><div class="in">
-  <button role="tab" aria-selected="true" data-p="casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v8.5a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19.5z"/></svg>En casa</button>
-  <button role="tab" aria-selected="false" data-p="fuera"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg>Fuera</button>
+  <button role="tab" aria-selected="true" data-p="casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v8.5a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19.5z"/></svg>Local</button>
+  <button role="tab" aria-selected="false" data-p="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendario</button>
+  <button role="tab" aria-selected="false" data-p="fuera"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg>Visitante</button>
 </div></nav>
 
 <script>
@@ -316,56 +350,111 @@ const nombreEq=p=>{const c=p.cat||(p.comp?p.comp.toLowerCase().replace(/(^|\s)\S
   return c+(p.fem&&!/femen/i.test(c)?" fem.":"")+(letra(p.equipo)?" "+letra(p.equipo):"")};
 
 let DATA=null,P=[],tab="casa",fin=0;
+const MAXFIN=5;
 try{tab=localStorage.getItem("tab")||"casa"}catch(e){}
+const TITULOS={casa:"Local",fuera:"Visitante",cal:"Calendario"};
+const MESL=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+/* Lo que le importa al bar: partidos de local en la Soledad (si el campo aún no se sabe, se supone que sí) */
+const enSoledad=p=>p.local&&(!p.campo||/SOLEDAD/i.test(p.campo));
+const diaDe=p=>p.fecha||p.fJornada;
+/* Duración aproximada para dibujar cada partido */
+const dura=p=>p.f7?60:/Aficionado|Senior|Juvenil/.test(p.cat)?105:85;
+const ordenHora=(a,b)=>(a.hora||"99").localeCompare(b.hora||"99")||nombreEq(a).localeCompare(nombreEq(b));
+const finDe=()=>{const L0=lunesDe(hoyM()),desde=suma(L0,7*fin);return {desde,hasta:suma(desde,6),sab:suma(desde,5),dom:suma(desde,6)}};
 
-function pinta(){
-  const hoy=hoyM(),L0=lunesDe(hoy);
-  const desde=suma(L0,7*fin),hasta=suma(desde,6);
-  const sab=suma(desde,5),dom=suma(desde,6);
-  const nom=fin===0?"Este fin de semana":fin===1?"El que viene":"Dentro de "+fin+" semanas";
-  document.getElementById("fin").innerHTML=`${nom}<span>${fCorta(sab)} – ${fCorta(dom)}</span>`;
-  document.getElementById("prev").disabled=fin<=0;
-  document.getElementById("next").disabled=fin>=2;
-  document.getElementById("title").textContent=tab==="casa"?"En casa":"Fuera";
-  document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.p===tab));
+function celda(p,vista){
+  const otro=vista==="casa"&&!enSoledad(p);
+  const tags=[otro?`<span class="tag otro">Otro campo</span>`:"",!p.oficial&&p.hora?`<span class="tag prov">Provisional</span>`:"",p.cambios?`<span class="tag cam">Cambio</span>`:""].filter(Boolean).join(" ");
+  return `<div class="cell${otro?" otro":""}"><div class="hr${p.hora?"":" no"}">${p.hora||"--:--"}</div><div class="txt">
+    <div class="ttl"><b>${esc(nombreEq(p))}</b></div>
+    <div class="meta">vs ${esc(corto(p.rival))}</div>
+    ${p.campo&&(vista==="fuera"||otro)?`<div class="meta">${esc(p.campo)}</div>`:""}
+    ${tags?`<div>${tags}</div>`:""}</div></div>`;
+}
 
-  const lista=P.filter(p=>(tab==="casa")===p.local).filter(p=>{const f=p.fecha||p.fJornada;return f>=desde&&f<=hasta});
-  const m=document.getElementById("main");
-  if(!lista.length){m.innerHTML=`<div class="empty">${tab==="casa"?"Ningún partido en casa":"Ningún partido fuera"}</div>`;return}
-
-  /* Agrupar por día (los que aún no tienen día van al día de la jornada) */
-  const dias={};for(const p of lista){const f=p.fecha||p.fJornada;(dias[f]=dias[f]||[]).push(p)}
+function listaDias(lista,vista){
+  const dias={};for(const p of lista)(dias[diaDe(p)]=dias[diaDe(p)]||[]).push(p);
   let h="";
   for(const f of Object.keys(dias).sort()){
-    const ps=dias[f].sort((a,b)=>(a.hora||"99").localeCompare(b.hora||"99")||nombreEq(a).localeCompare(nombreEq(b)));
-    const con=ps.filter(p=>p.hora),sin=ps.length-con.length,x=D(f);
-    const sinDia=ps.every(p=>!p.fecha);
-    if(tab==="casa"){
-      /* Tarjeta del día: de qué hora a qué hora hay partidos y cuántos */
+    const ps=dias[f].sort(ordenHora),x=D(f),sinDia=ps.every(p=>!p.fecha);
+    const cab=`${DIAS[x.getUTCDay()]} ${fCorta(f)}${sinDia?" · día por confirmar":""}`;
+    if(vista==="casa"){
+      /* Tarjeta del día: solo cuentan los de la Soledad */
+      const sol=ps.filter(enSoledad),con=sol.filter(p=>p.hora),sin=sol.length-con.length,otros=ps.length-sol.length;
       const ini=con.length?con[0].hora:null,ult=con.length?con[con.length-1].hora:null;
-      const bars=con.map(p=>{const a=Math.max(0,min(p.hora)-8*60),dur=(p.f7?60:p.cat==="Aficionado"||p.cat==="Senior"||p.cat==="Juvenil"?105:85);
-        return `<i style="left:${a/(14*60)*100}%;width:${Math.max(1.5,dur/(14*60)*100)}%"></i>`}).join("");
-      h+=`<div class="day"><div class="dn">${DIAS[x.getUTCDay()]} ${fCorta(f)}${sinDia?" · día por confirmar":""}</div>
-        <div class="big"><div class="rng">${ini?(ini===ult?ini:ini+" – "+ult):"Sin horario"}</div><div class="cnt">${ps.length} partido${ps.length>1?"s":""}</div></div>
-        ${sin&&con.length?`<div class="tbd">${sin} sin hora todavía</div>`:""}
-        ${con.length?`<div class="tl">${bars}</div><div class="tlx"><span>8:00</span><span>15:00</span><span>22:00</span></div>`:""}</div>`;
+      const bars=con.map(p=>{const a=Math.max(0,min(p.hora)-8*60);return `<i style="left:${a/(14*60)*100}%;width:${Math.max(1.5,dura(p)/(14*60)*100)}%"></i>`}).join("");
+      h+=`<div class="day"><div class="dn">${cab}</div>`+(sol.length
+        ?`<div class="big"><div class="rng">${ini?(ini===ult?ini:ini+" – "+ult):"Sin horario"}</div><div class="cnt">${sol.length} en la Soledad</div></div>
+          ${sin&&con.length?`<div class="tbd">${sin} sin hora todavía</div>`:""}
+          ${con.length?`<div class="tl">${bars}</div><div class="tlx"><span>8:00</span><span>15:00</span><span>22:00</span></div>`:""}`
+        :`<div class="big"><div class="rng" style="font-size:22px">Nada en la Soledad</div></div>`)
+        +`${otros?`<div class="otro">+${otros} de local en otro campo</div>`:""}</div>`;
     }else h+=`<div class="dayh">${DIAS[x.getUTCDay()]}<span>${fCorta(f)}${sinDia?" · día por confirmar":""}</span></div>`;
-    h+=`<div class="group">`+ps.map(p=>{
-      const tags=[!p.oficial&&p.hora?`<span class="tag prov">Provisional</span>`:"",p.cambios?`<span class="tag cam">Cambio</span>`:""].join(" ");
-      return `<div class="cell"><div class="hr${p.hora?"":" no"}">${p.hora||"--:--"}</div><div class="txt">
-        <div class="ttl"><b>${esc(nombreEq(p))}</b></div>
-        <div class="meta">vs ${esc(corto(p.rival))}</div>
-        ${p.campo&&tab==="fuera"?`<div class="meta">${esc(p.campo)}</div>`:""}
-        ${p.campo&&tab==="casa"&&!/BARAJAS|SOLEDAD/i.test(p.campo)?`<div class="meta">${esc(p.campo)}</div>`:""}
-        ${tags.trim()?`<div>${tags}</div>`:""}</div></div>`}).join("")+`</div>`;
+    h+=`<div class="group">`+ps.map(p=>celda(p,vista)).join("")+`</div>`;
   }
   if(lista.some(p=>!p.hora))h+=`<p class="note">Los horarios oficiales salen el lunes de cada semana.</p>`;
-  m.innerHTML=h;m.classList.remove("fade");void m.offsetWidth;m.classList.add("fade");
+  return h;
+}
+
+/* Calendario del mes con los días de partido en la Soledad, y debajo la agenda del fin de semana */
+function calendario(F){
+  const ref=D(F.sab),y=ref.getUTCFullYear(),mo=ref.getUTCMonth();
+  const primero=`${y}-${String(mo+1).padStart(2,"0")}-01`,ini=lunesDe(primero);
+  const hoy=hoyM(),L0=lunesDe(hoy),ult=suma(L0,7*MAXFIN+6);
+  const porDia={};for(const p of P){const f=diaDe(p);(porDia[f]=porDia[f]||[]).push(p)}
+  let dias="";
+  for(let i=0;i<42;i++){
+    const f=suma(ini,i),d=D(f);
+    if(i>=35&&d.getUTCMonth()!==mo)break;
+    const ps=porDia[f]||[],sol=ps.filter(enSoledad).sort(ordenHora),fue=ps.filter(p=>!p.local).length;
+    const we=d.getUTCDay()===0||d.getUTCDay()===6;
+    const cls=["cd",d.getUTCMonth()!==mo?"out":"",f===hoy?"today":"",sol.length?"game":we?"we":"",f>=F.desde&&f<=F.hasta?"sel":""].filter(Boolean).join(" ");
+    const nav=f>=L0&&f<=ult?` data-f="${f}"`:"";
+    dias+=`<button class="${cls}"${nav}><span class="n">${d.getUTCDate()}</span>${sol.length?`<span class="x">${sol.length} part.</span><span class="x">${(sol.find(p=>p.hora)||{}).hora||""}</span>`:fue?`<span class="x r">${fue} fuera</span>`:""}</button>`;
+  }
+  let h=`<div class="cal"><div class="mt">${MESL[mo]} ${y}</div><div class="dow">${["L","M","X","J","V","S","D"].map(x=>`<span>${x}</span>`).join("")}</div><div class="days">${dias}</div></div>
+    <div class="calleg"><span><i style="background:var(--yellow)"></i>Partidos en la Soledad</span><span><i style="box-shadow:inset 0 0 0 2px var(--ink)"></i>Fin de semana elegido</span></div>`;
+
+  /* Agenda: una columna por día del fin de semana con partidos en la Soledad */
+  const sem=P.filter(p=>enSoledad(p)&&p.hora&&diaDe(p)>=F.desde&&diaDe(p)<=F.hasta);
+  h+=`<h2>En la Soledad</h2>`;
+  if(!sem.length)return h+`<div class="empty">Sin partidos con hora este fin de semana</div>`;
+  const cols=[...new Set(sem.map(diaDe))].sort();
+  let h0=Math.min(...sem.map(p=>Math.floor(min(p.hora)/60))),h1=Math.max(...sem.map(p=>Math.ceil((min(p.hora)+dura(p))/60)));
+  h0=Math.min(h0,9);h1=Math.max(h1,h0+6);
+  const PX=36/60,alto=(h1-h0)*60*PX;
+  let horas="";for(let k=h0;k<=h1;k++)horas+=`<span style="top:${22+(k-h0)*60*PX}px">${k}:00</span>`;
+  h+=`<div class="ag"><div class="hrs" style="height:${22+alto}px">${horas}</div>`+cols.map(f=>{
+    const ps=sem.filter(p=>diaDe(p)===f).sort(ordenHora);
+    /* Si coinciden a la vez, se reparten en carriles */
+    const fin_=[];for(const p of ps){const a=min(p.hora);let c=fin_.findIndex(e=>e<=a);if(c<0){c=fin_.length;fin_.push(0)}fin_[c]=a+dura(p);p._c=c}
+    const n=Math.max(1,fin_.length);
+    return `<div class="col"><div class="ch">${DIAS[D(f).getUTCDay()].slice(0,3)} ${D(f).getUTCDate()}</div><div class="body" style="height:${alto}px">`+
+      ps.map(p=>{const top=(min(p.hora)-h0*60)*PX;return `<div class="ev${p.oficial?"":" prov"}" style="top:${top}px;height:${dura(p)*PX}px;left:${p._c/n*100}%;width:${100/n}%"><b>${p.hora}</b>${esc(nombreEq(p))}</div>`}).join("")+`</div></div>`}).join("")+`</div>`;
+  return h;
+}
+
+function pinta(){
+  const F=finDe();
+  const nom=fin===0?"Este fin de semana":fin===1?"El que viene":"Dentro de "+fin+" semanas";
+  document.getElementById("fin").innerHTML=`${nom}<span>${fCorta(F.sab)} – ${fCorta(F.dom)}</span>`;
+  document.getElementById("prev").disabled=fin<=0;
+  document.getElementById("next").disabled=fin>=MAXFIN;
+  document.getElementById("title").textContent=TITULOS[tab];
+  document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.p===tab));
+  const m=document.getElementById("main");
+  if(tab==="cal")m.innerHTML=calendario(F);
+  else{
+    const lista=P.filter(p=>(tab==="casa")===p.local).filter(p=>diaDe(p)>=F.desde&&diaDe(p)<=F.hasta);
+    m.innerHTML=lista.length?listaDias(lista,tab):`<div class="empty">${tab==="casa"?"Ningún partido de local":"Ningún partido de visitante"}</div>`;
+  }
+  m.querySelectorAll(".cd[data-f]").forEach(b=>b.onclick=()=>{fin=Math.round((D(lunesDe(b.dataset.f))-D(lunesDe(hoyM())))/(7*864e5));pinta()});
+  m.classList.remove("fade");void m.offsetWidth;m.classList.add("fade");
 }
 
 document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.p;try{localStorage.setItem("tab",tab)}catch(e){}pinta();window.scrollTo({top:0})});
 document.getElementById("prev").onclick=()=>{if(fin>0){fin--;pinta()}};
-document.getElementById("next").onclick=()=>{if(fin<2){fin++;pinta()}};
+document.getElementById("next").onclick=()=>{if(fin<MAXFIN){fin++;pinta()}};
 
 function start(d){
   DATA=d;P=d.partidos||[];_loadedVer=d.actualizado;
