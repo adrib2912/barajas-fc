@@ -1,15 +1,49 @@
 Modo completo · semana del 2026-10-19 · ventana 2026-10-18 a 2026-11-08
-/fichaclub/42740?temporada=22: 'club' vacío tras 3 intentos
-/fichaclub/42740: 'club' vacío tras 2 intentos
-Ficha del club: 0 equipos, 0 grupos
-  Equipo 24025221 C.D. BARAJAS: 0 grupo(s) · claves: team,query
-Tipos de juego: page.evaluate: TypeError: Failed to execute 'fetch' on 'Window': Failed to parse URL from /api/game-types
-    at eval (eval at evaluate (:234:30), <anonymous>:1:32)
-    at UtilityScript.evaluate (<anonymous>:236:17)
-    at UtilityScript.<anonymous> (<anonymous>:1:44)
-Competiciones conocidas: 0
-Solo 1 grupo(s) encontrados; mantengo la lista anterior (1).
-Grupos a leer: 1
-temporada=22&tipojuego=2&competicion=26738230&grupo=26738231 : 26 jornadas, 3 partido(s) nuestros en la ventana
-Actas leídas: 3
-data.json: 3 partidos (1 en casa) · 1/1 grupos leídos
+Ficha del club: 24 equipos, 0 grupos
+Competiciones de la temporada: 116
+  C.D. BARAJAS · PRIMERA AFICIONADO: PRIMERA AFICIONADO Grupo 4
+  C.D. BARAJAS 'A' · PREFERENTE JUVENIL: PREFERENTE JUVENIL Grupo 3
+  C.D. BARAJAS 'B' · PRIMERA JUVENIL: PRIMERA JUVENIL Grupo 7
+  C.D. BARAJAS 'A' · PRIMERA CADETE: PRIMERA CADETE Grupo 6
+  C.D. BARAJAS 'B' · SEGUNDA CADETE: SEGUNDA CADETE Grupo 19
+  C.D. BARAJAS 'C' · SEGUNDA CADETE: SEGUNDA CADETE Grupo 18
+  C.D. BARAJAS 'A' · PREFERENTE INFANTIL: PREFERENTE INFANTIL Grupo 3
+  C.D. BARAJAS 'B' · SEGUNDA INFANTIL: SEGUNDA INFANTIL  Grupo 21
+  C.D. BARAJAS 'C' · SEGUNDA INFANTIL: SEGUNDA INFANTIL  Grupo 19
+  C.D. BARAJAS 'D' · SEGUNDA INFANTIL: SEGUNDA INFANTIL  Grupo 18
+  C.D. BARAJAS 'A' · PRIMERA DIVISION AUTONOMICA ALEV.F-7: NO ENCONTRADO (0 competiciones candidatas)
+  C.D. BARAJAS 'B' · PRIMERA ALEVIN F-7: PRIMERA ALEVIN F-7 GRUPO 7
+  C.D. BARAJAS 'C' · SEGUNDA ALEVIN F-7: SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS
+  C.D. BARAJAS 'D' · SEGUNDA ALEVIN F-7: SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS
+  C.D. BARAJAS 'E' · SEGUNDA ALEVIN F-7: SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS
+  C.D. BARAJAS 'A' · PRIMERA DIVISION AUTONOMICA BENJAMIN F7: NO ENCONTRADO (0 competiciones candidatas)
+  C.D. BARAJAS 'B' · PRIMERA BENJAMIN F7: NO ENCONTRADO (0 competiciones candidatas)
+  C.D. BARAJAS 'C' · PRIMERA BENJAMIN F7: NO ENCONTRADO (0 competiciones candidatas)
+  C.D. BARAJAS 'A' · PREBENJAMIN: PREBENJAMIN F7 INICIACION GRUPO 24- VALDEBEBAS
+  C.D. BARAJAS · PRIMERA FEMENINO SENIOR F-7: PRIMERA FEMENINO SENIOR F-7 Grupo 1
+  C.D. BARAJAS · PRIMERA FEMENINO JUVENIL: PRIMERA FEMENINO JUVENIL Grupo 2
+  C.D. BARAJAS · PRIMERA FEMENINO CADETE: PRIMERA FEMENINO CADETE Grupo 3
+  C.D. BARAJAS · PREFERENTE FEMENINO INFANTIL F-7: PREFERENTE FEMENINO INFANTIL F-7 Grupo 4
+  C.D. BARAJAS · PRIMERA FEMENINO ALEVIN F-7: PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS
+Competiciones conocidas: 116
+Grupos a leer: 18
+PRIMERA AFICIONADO Grupo 4: 34 jornadas, 4 partido(s) nuestros en la ventana
+PREFERENTE JUVENIL Grupo 3: 34 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA JUVENIL Grupo 7: 34 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA CADETE Grupo 6: 30 jornadas, 3 partido(s) nuestros en la ventana
+SEGUNDA CADETE Grupo 19: 26 jornadas, 3 partido(s) nuestros en la ventana
+SEGUNDA CADETE Grupo 18: 26 jornadas, 3 partido(s) nuestros en la ventana
+PREFERENTE INFANTIL Grupo 3: 30 jornadas, 3 partido(s) nuestros en la ventana
+SEGUNDA INFANTIL  Grupo 21: 26 jornadas, 3 partido(s) nuestros en la ventana
+SEGUNDA INFANTIL  Grupo 19: 26 jornadas, 3 partido(s) nuestros en la ventana
+SEGUNDA INFANTIL  Grupo 18: 26 jornadas, 3 partido(s) nuestros en la ventana
+PRIMERA ALEVIN F-7 GRUPO 7: 26 jornadas, 2 partido(s) nuestros en la ventana
+SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS: 11 jornadas, 4 partido(s) nuestros en la ventana
+PREBENJAMIN F7 INICIACION GRUPO 24- VALDEBEBAS: 11 jornadas, 2 partido(s) nuestros en la ventana
+PRIMERA FEMENINO SENIOR F-7 Grupo 1: 26 jornadas, 3 partido(s) nuestros en la ventana
+PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 2 partido(s) nuestros en la ventana
+PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 3 partido(s) nuestros en la ventana
+PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 3 partido(s) nuestros en la ventana
+PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 2 partido(s) nuestros en la ventana
+Actas leídas: 53
+data.json: 54 partidos (26 en casa) · 18/18 grupos leídos

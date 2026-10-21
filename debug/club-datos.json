@@ -1,3 +1,209 @@
 {
- "club": null
+ "club": {
+  "estado": "1",
+  "sesion_ok": "1",
+  "codigo": "1019",
+  "clave_acceso": "1019",
+  "nombre_club": "C.D. BARAJAS",
+  "escudo": "/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg",
+  "delegacion": "DELEGACIÓN DE ALCOBENDAS",
+  "comarca": "",
+  "CIF": "G79905725",
+  "domicilio": "AYERBE, 16",
+  "localidad": "Madrid",
+  "provincia": "Madrid",
+  "codigo_postal": "28042",
+  "portal_web": "www.cdbarajas.com",
+  "titular_correspondencia": "C.D. BARAJAS",
+  "tratamiento_correspondencia": "",
+  "domicilio_correspondencia": "AYERBE, 16",
+  "localidad_correspondencia": "Madrid",
+  "provincia_correspondencia": "Madrid",
+  "codigo_postal_correspondencia": "28042",
+  "email_correspondencia": "cd.barajas@hotmail.es",
+  "fecha_fundacion": "",
+  "twitter": "",
+  "facebook": "Escuela de Futbol CD Barajas",
+  "linkedin": "",
+  "instagram": "",
+  "telefonos": "913292218 - 606217604&nbsp;-&nbsp;&nbsp;699707552",
+  "fax": "913292218",
+  "equipos_club": [
+   {
+    "codigo_equipo": "139",
+    "categoria": "PRIMERA AFICIONADO",
+    "nombre_equipo": "C.D. BARAJAS",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "140",
+    "categoria": "PREFERENTE JUVENIL",
+    "nombre_equipo": "C.D. BARAJAS 'A'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "10642928",
+    "categoria": "PRIMERA JUVENIL",
+    "nombre_equipo": "C.D. BARAJAS 'B'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "141",
+    "categoria": "PRIMERA CADETE",
+    "nombre_equipo": "C.D. BARAJAS 'A'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "6816915",
+    "categoria": "SEGUNDA CADETE",
+    "nombre_equipo": "C.D. BARAJAS 'B'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "17140328",
+    "categoria": "SEGUNDA CADETE",
+    "nombre_equipo": "C.D. BARAJAS 'C'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "142",
+    "categoria": "PREFERENTE INFANTIL",
+    "nombre_equipo": "C.D. BARAJAS 'A'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "4915460",
+    "categoria": "SEGUNDA INFANTIL",
+    "nombre_equipo": "C.D. BARAJAS 'B'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "24025220",
+    "categoria": "SEGUNDA INFANTIL",
+    "nombre_equipo": "C.D. BARAJAS 'C'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "26741128",
+    "categoria": "SEGUNDA INFANTIL",
+    "nombre_equipo": "C.D. BARAJAS 'D'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "15280076",
+    "categoria": "PRIMERA DIVISION AUTONOMICA ALEV.F-7",
+    "nombre_equipo": "C.D. BARAJAS 'A'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "17140325",
+    "categoria": "PRIMERA ALEVIN F-7",
+    "nombre_equipo": "C.D. BARAJAS 'B'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "15280077",
+    "categoria": "SEGUNDA ALEVIN F-7",
+    "nombre_equipo": "C.D. BARAJAS 'C'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "17140326",
+    "categoria": "SEGUNDA ALEVIN F-7",
+    "nombre_equipo": "C.D. BARAJAS 'D'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "21427633",
+    "categoria": "SEGUNDA ALEVIN F-7",
+    "nombre_equipo": "C.D. BARAJAS 'E'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "300513",
+    "categoria": "PRIMERA DIVISION AUTONOMICA BENJAMIN F7",
+    "nombre_equipo": "C.D. BARAJAS 'A'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "15280075",
+    "categoria": "PRIMERA BENJAMIN F7",
+    "nombre_equipo": "C.D. BARAJAS 'B'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "144",
+    "categoria": "PRIMERA BENJAMIN F7",
+    "nombre_equipo": "C.D. BARAJAS 'C'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "145",
+    "categoria": "PREBENJAMIN",
+    "nombre_equipo": "C.D. BARAJAS 'A'",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "24025221",
+    "categoria": "PRIMERA FEMENINO SENIOR F-7",
+    "nombre_equipo": "C.D. BARAJAS",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "24025222",
+    "categoria": "PRIMERA FEMENINO JUVENIL",
+    "nombre_equipo": "C.D. BARAJAS",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "21426744",
+    "categoria": "PRIMERA FEMENINO CADETE",
+    "nombre_equipo": "C.D. BARAJAS",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "17134466",
+    "categoria": "PREFERENTE FEMENINO INFANTIL F-7",
+    "nombre_equipo": "C.D. BARAJAS",
+    "en_competicion": "1"
+   },
+   {
+    "codigo_equipo": "21427634",
+    "categoria": "PRIMERA FEMENINO ALEVIN F-7",
+    "nombre_equipo": "C.D. BARAJAS",
+    "en_competicion": "1"
+   }
+  ],
+  "presidente": "JUAN MUÑOZ SEVILLANO",
+  "equipaciones": [
+   {
+    "nombre_camiseta": "camiseta",
+    "camiseta": "AMARILLA Y NEGRA RAYAS",
+    "nombre_pantalon": "pantalon",
+    "pantalon": "NEGRO",
+    "nombre_medias": "medias",
+    "medias": "AMARILLAS "
+   }
+  ],
+  "equipacion1_diseno": [
+   {
+    "cod_tipo_camiseta": "17",
+    "nombre_camiseta": "Rayas anchas",
+    "clase_css_camiseta": "shirt faf faf-barres3",
+    "color_camiseta1": "#000000",
+    "color_camiseta2": "#FFE151",
+    "cod_tipo_pantalon": "1",
+    "nombre_pantalon": "Base",
+    "clase_css_pantalon": "shirt faf faf-pantalons",
+    "color_pantalon1": "#000000",
+    "color_pantalon2": "#FFFFFF",
+    "cod_tipo_medias": "1",
+    "nombre_medias": "Base",
+    "clase_css_medias": "socks faf faf-mitgetes",
+    "color_medias1": "#FFE151",
+    "color_medias2": "#FFFFFF"
+   }
+  ],
+  "host": "https://appweb.rffm.es/"
+ }
 }
