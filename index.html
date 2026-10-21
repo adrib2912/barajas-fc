@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Bar C.D. Barajas</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bar Barajas">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#000000">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("tema")||"dark";document.documentElement.dataset.size=localStorage.getItem("letra")||"n";}catch(e){document.documentElement.dataset.theme="dark";document.documentElement.dataset.size="n";}</script>
+<link rel="apple-touch-icon" href="icon.png?v=2">
+<link rel="icon" href="icon-512.png?v=2">
+<style>
+/* Estilo app de iPhone: fondo agrupado, tarjetas redondeadas, barra de pestañas inferior translúcida */
+:root{
+  --bg:#f2f2f7; --card:#ffffff; --ink:#000000; --ink2:#3c3c4399; --ink3:#3c3c434d; --sep:#c6c6c8;
+  --fill:#7676801f; --blue:#007aff; --green:#34c759; --red:#ff3b30; --orange:#ff9500;
+  --yellow:#f5c400; --hero:#ffffff; --hero-ink:#000000; --hero-ink2:#3c3c4399;
+  --hf:rgba(0,0,0,.045); --hf2:rgba(0,0,0,.07); --hf3:rgba(0,0,0,.18); --acc:#a37f00;
+  --us:#f5c40026; --kit:#e5e5ea; --kit-line:#8e8e93;
+  --bar:rgba(249,249,249,.86);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --round:"SF Pro Rounded",ui-rounded,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#000000; --card:#1c1c1e; --ink:#ffffff; --ink2:#ebebf599; --ink3:#ebebf54d; --sep:#38383a;
+  --fill:#7676803d; --blue:#0a84ff; --green:#30d158; --red:#ff453a; --orange:#ff9f0a;
+  --hero:#1c1c1e; --hero-ink:#ffffff; --hero-ink2:#ffffffa6; --hf:rgba(255,255,255,.08); --hf2:rgba(255,255,255,.13); --hf3:rgba(255,255,255,.25); --acc:#f5c400; --us:#f5c4002e; --kit:#3a3a3c; --kit-line:#8e8e93; --bar:rgba(22,22,24,.86); color-scheme:dark}
+@media (prefers-color-scheme: dark){:root[data-theme="auto"]{
+  --bg:#000000; --card:#1c1c1e; --ink:#ffffff; --ink2:#ebebf599; --ink3:#ebebf54d; --sep:#38383a;
+  --fill:#7676803d; --blue:#0a84ff; --green:#30d158; --red:#ff453a; --orange:#ff9f0a;
+  --hero:#1c1c1e; --hero-ink:#ffffff; --hero-ink2:#ffffffa6; --hf:rgba(255,255,255,.08); --hf2:rgba(255,255,255,.13); --hf3:rgba(255,255,255,.25); --acc:#f5c400; --us:#f5c4002e; --kit:#3a3a3c; --kit-line:#8e8e93; --bar:rgba(22,22,24,.86); color-scheme:dark}}
+html[data-size="g"] .wrap{zoom:1.13}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+*{touch-action:manipulation}
+button,a{-webkit-user-select:none;user-select:none}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font:17px/1.35 var(--font);-webkit-font-smoothing:antialiased;
+  padding:env(safe-area-inset-top,0px) max(16px,env(safe-area-inset-right,0px)) calc(96px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:560px;margin:0 auto}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:8px}
+a{color:var(--blue);text-decoration:none}
+
+/* Título grande */
+header{padding:18px 4px 14px}
+header .sub{font-size:13px;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.02em}
+header h1{margin:2px 0 0;font:700 34px/1.1 var(--font);letter-spacing:-.02em}
+
+/* Secciones tipo lista agrupada */
+h2{font:700 22px/1.2 var(--font);margin:26px 4px 8px;letter-spacing:-.01em}
+.group{background:var(--card);border-radius:14px;overflow:hidden}
+.cell{display:flex;align-items:center;gap:12px;padding:11px 14px;position:relative;width:100%;text-align:left}
+.cell + .cell::before{content:"";position:absolute;top:0;left:54px;right:0;height:.5px;background:var(--sep)}
+.cell.sel{background:var(--us)}
+.cell .txt{min-width:0;flex:1}
+.cell .ttl{font-size:16px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cell .meta{font-size:13px;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cell .end{text-align:right;flex:none;font-variant-numeric:tabular-nums}
+.res{font:600 17px/1 var(--round)}
+.tag{display:inline-block;margin-top:4px;font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px}
+.tag.W{background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--green)}
+.tag.L{background:color-mix(in srgb,var(--red) 18%,transparent);color:var(--red)}
+.tag.D{background:color-mix(in srgb,var(--orange) 20%,transparent);color:var(--orange)}
+.cell .when{font-size:13px;color:var(--ink2)}
+.cell.rest .ttl{color:var(--ink2)}
+.chev{width:8px;height:13px;color:var(--ink3);flex:none}
+.note{font-size:13px;color:var(--ink2);margin:8px 16px 0;line-height:1.4}
+
+.round{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--card);color:var(--blue)}
+.round:disabled{color:var(--ink3)}
+.round svg{width:15px;height:15px}
+.gm{display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:6px;padding:12px 14px;position:relative}
+/* Barra de pestañas */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--bar);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-top:.5px solid var(--sep);display:flex;justify-content:center;
+  padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+.tabs .in{display:flex;width:100%;max-width:560px}
+.tabs button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10.5px;font-weight:500;color:#8e8e93;padding:4px 0}
+.tabs button svg{width:26px;height:26px}
+.tabs button[aria-selected="true"]{color:var(--blue)}
+@media (prefers-reduced-motion:no-preference){.fade{animation:f .25s ease}@keyframes f{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+.seg2{display:flex;background:var(--fill);border-radius:10px;padding:2px;margin:0 0 10px}
+.seg2 button{flex:1;padding:7px 4px;border-radius:8px;font-size:14px;font-weight:500}
+.seg2 button[aria-pressed="true"]{background:var(--yellow);color:#111;box-shadow:0 1px 3px rgba(0,0,0,.12);font-weight:600}
+/* ---- Ajustes y avisos ---- */
+.sheet{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center}
+.sbox{width:100%;max-width:560px;background:var(--bg);border-radius:22px 22px 0 0;padding:16px max(16px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:10px}
+.shd{display:flex;justify-content:space-between;align-items:center;font-size:20px}
+.sbox .k{font-size:13px;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.03em;margin-top:6px}
+.clv{display:flex;gap:8px}
+.clv input{flex:1;min-width:0;height:40px;border-radius:12px;border:0;background:var(--card);color:var(--ink);padding:0 12px;font:inherit;font-size:16px}
+.clv button{height:40px;padding:0 14px;border-radius:12px;background:var(--yellow);color:#111;font-weight:600}
+.clv button.sec{background:var(--card);color:var(--red)}
+.clvt{font-size:13px;color:var(--ink2);margin:0}
+.pbar{height:10px;border-radius:5px;background:var(--fill);overflow:hidden}
+.pbar i{display:block;height:100%;width:0;border-radius:5px;background:var(--yellow);transition:width .6s linear}
+.pbar.err i{background:var(--red)}
+.upst{display:flex;justify-content:space-between;font-size:15px;font-weight:600}
+.upst span:last-child{color:var(--ink2);font-variant-numeric:tabular-nums;font-weight:500}
+.upl{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--ink3)}
+.upl li{display:flex;align-items:center;gap:10px}
+.upl li::before{content:"";width:18px;height:18px;border-radius:50%;border:2px solid var(--ink3);box-sizing:border-box;flex:none}
+.upl li.on{color:var(--ink);font-weight:600}
+.upl li.on::before{border-color:var(--yellow);border-top-color:transparent;animation:gira .8s linear infinite}
+.upl li.ok{color:var(--ink2)}
+.upl li.ok::before{background:var(--green);border-color:var(--green);content:"✓";color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center}
+.upl li.ko{color:var(--red)}
+.upl li.ko::before{background:var(--red);border-color:var(--red);content:"!";color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center}
+@keyframes gira{to{transform:rotate(360deg)}}
+#stale{margin:4px 0 12px;padding:10px 12px;border-radius:12px;background:color-mix(in srgb,var(--red) 18%,transparent);color:var(--red);font-size:14px;font-weight:600}
+/* ---- Bar ---- */
+.seg{display:flex;align-items:center;gap:10px;margin:4px 0 12px}
+.seg .lbl2{flex:1;text-align:center;font-weight:600}
+.seg .lbl2 span{display:block;font-size:13px;font-weight:400;color:var(--ink2)}
+.day{background:var(--hero);border-radius:18px;padding:14px 16px;margin:0 0 10px;position:relative;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.day::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:repeating-linear-gradient(90deg,var(--yellow) 0 14px,#111 14px 28px)}
+.day .dn{font-size:13px;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.day .big{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:2px}
+.day .rng{font:700 30px/1.1 var(--round);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.day .cnt{font-size:15px;font-weight:600;color:var(--acc);white-space:nowrap}
+.day .tbd{font-size:13px;color:var(--orange);margin-top:2px}
+.tl{position:relative;height:22px;margin:12px 0 2px;border-radius:6px;background:var(--fill)}
+.tl i{position:absolute;top:3px;bottom:3px;border-radius:4px;background:var(--yellow);opacity:.85}
+.tlx{display:flex;justify-content:space-between;font-size:11px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.cell .hr{width:52px;flex:none;font:600 17px/1 var(--round);font-variant-numeric:tabular-nums}
+.cell .hr.no{color:var(--ink3);font-size:15px}
+.cell + .cell::before{left:78px}
+.cell .ttl b{font-weight:700}
+.cell .meta + .meta{margin-top:1px}
+.tag.prov{background:var(--fill);color:var(--ink2)}
+.tag.cam{background:color-mix(in srgb,var(--orange) 20%,transparent);color:var(--orange)}
+.empty{background:var(--card);border-radius:14px;padding:22px 16px;text-align:center;color:var(--ink2);font-size:15px}
+.group{margin-bottom:14px}
+.dayh{font:700 20px/1.2 var(--font);margin:22px 4px 8px;letter-spacing:-.01em}
+.dayh span{font-weight:500;color:var(--ink2);font-size:15px;margin-left:6px}
+.foot{font-size:12px;color:var(--ink3);text-align:center;margin:22px 0 0}
+.hb{width:38px;height:38px;border-radius:50%;background:var(--card);display:grid;place-items:center;color:var(--blue);flex:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="sub">C.D. Barajas · Bar</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px"><h1 id="title">En casa</h1>
+    <div style="display:flex;gap:8px"><button id="ajustes" aria-label="Ajustes" class="hb"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+    <button id="reload" aria-label="Actualizar" class="hb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></button></div></div>
+    <div id="stale" hidden></div>
+  </header>
+  <div class="seg">
+    <button class="round" id="prev" aria-label="Fin de semana anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="lbl2" id="fin"></div>
+    <button class="round" id="next" aria-label="Fin de semana siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <main id="main" class="fade"></main>
+  <p class="foot" id="foot"></p>
+</div>
+
+<div class="sheet" id="sheet" hidden><div class="sbox" role="dialog" aria-label="Ajustes">
+  <div class="shd"><b>Ajustes</b><button id="cerrar" class="round" aria-label="Cerrar">✕</button></div>
+  <div class="k">Tema</div>
+  <div class="seg2" data-set="tema"><button data-v="auto">Auto</button><button data-v="light">Claro</button><button data-v="dark">Oscuro</button></div>
+  <div class="k">Letra</div>
+  <div class="seg2" data-set="letra"><button data-v="n">Normal</button><button data-v="g">Grande</button></div>
+  <div class="k">Actualizar datos</div>
+  <div class="clv" id="clvBox"></div>
+</div></div>
+
+<div class="sheet" id="up" hidden><div class="sbox" role="dialog" aria-label="Actualizando datos">
+  <div class="shd"><b id="upH">Actualizando datos</b><button id="upX" class="round" aria-label="Cerrar">✕</button></div>
+  <div class="pbar" id="upBar"><i></i></div>
+  <div class="upst"><span id="upTxt"></span><span id="upT">0:00</span></div>
+  <ol class="upl" id="upL"></ol>
+</div></div>
+
+<nav class="tabs" role="tablist"><div class="in">
+  <button role="tab" aria-selected="true" data-p="casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v8.5a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19.5z"/></svg>En casa</button>
+  <button role="tab" aria-selected="false" data-p="fuera"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg>Fuera</button>
+</div></nav>
+
+<script>
+["gesturestart","gesturechange","gestureend"].forEach(ev=>document.addEventListener(ev,e=>e.preventDefault(),{passive:false}));
+document.addEventListener("touchmove",e=>{if(e.touches&&e.touches.length>1)e.preventDefault()},{passive:false});
+
+/* Ajustes: tema y letra (se guardan en este móvil) */
+(function(){const sh=document.getElementById("sheet");const K={tema:"theme",letra:"size"};
+  const pinta=()=>document.querySelectorAll("#sheet .seg2").forEach(g=>{const v=document.documentElement.dataset[K[g.dataset.set]];g.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===v))});
+  document.getElementById("ajustes").onclick=()=>{pinta();sh.hidden=false};
+  document.getElementById("cerrar").onclick=()=>sh.hidden=true;
+  sh.onclick=e=>{if(e.target===sh)sh.hidden=true};
+  document.querySelectorAll("#sheet .seg2 button").forEach(b=>b.onclick=()=>{const k=b.parentNode.dataset.set;
+    document.documentElement.dataset[K[k]]=b.dataset.v;try{localStorage.setItem(k,b.dataset.v)}catch(e){}pinta()});
+})();
+
+/* ---- Actualizar datos desde la app ----
+   Con la clave de GitHub guardada en este móvil, el botón de recargar le pide a GitHub que lea la RFFM
+   ahora mismo (modo rápido) y va enseñando en qué paso está. Sin clave, solo recarga la página. */
+const REPO="https://api.github.com/repos/"+(location.hostname.split(".")[0]||"adrib2912")+"/"+(location.pathname.split("/")[1]||"barajas-fc");
+const clave=()=>{try{return localStorage.getItem("ghclave")||""}catch(e){return ""}};
+/* Enlace para compartir la clave: …/barajas-fc/#clave=github_pat_… la guarda en el móvil y la quita de la dirección */
+(function(){const m=location.hash.match(/^#clave=(\S+)$/);if(!m)return;
+  try{localStorage.setItem("ghclave",decodeURIComponent(m[1]))}catch(e){}history.replaceState(null,"",location.pathname+location.search)})();
+(function(){const box=document.getElementById("clvBox");
+  const pinta=()=>{box.innerHTML=clave()
+    ?`<p class="clvt" style="flex:1;align-self:center">Clave guardada en este móvil</p><button class="sec" id="clvDel">Quitar</button>`
+    :`<input id="clvIn" type="password" placeholder="Clave de GitHub" autocomplete="off" autocapitalize="off" spellcheck="false"><button id="clvOk">Guardar</button>`;
+    const ok=document.getElementById("clvOk"),del=document.getElementById("clvDel");
+    if(ok)ok.onclick=()=>{const v=document.getElementById("clvIn").value.trim();if(!v)return;try{localStorage.setItem("ghclave",v)}catch(e){}pinta()};
+    if(del)del.onclick=()=>{try{localStorage.removeItem("ghclave")}catch(e){}pinta()};};
+  pinta();})();
+
+const ETAPAS=[["pedir","Avisar a GitHub",6],["cola","Esperando turno",8],["prep","Preparando",8],["rffm","Leyendo la web de la RFFM",240],["guardar","Guardando",8],["publicar","Publicando en la app",50]];
+let UP=null;
+function actualizar(){
+  const sh=document.getElementById("up");sh.hidden=false;
+  if(UP&&!UP.fin)return;
+  let est={};try{est=JSON.parse(localStorage.getItem("upEst")||"{}")}catch(e){}
+  let prev=null;try{prev=JSON.parse(localStorage.getItem("upAct")||"null")}catch(e){}
+  UP=prev&&Date.now()-prev.t0<15*60e3?{...prev,est}:{id:Math.random().toString(36).slice(2,8),t0:Date.now(),ver:_loadedVer,run:null,est};
+  UP.etapa=UP.etapa||0;UP.desde=UP.desde||{};UP.fin=false;
+  bucle();
+}
+document.getElementById("upX").onclick=()=>{document.getElementById("up").hidden=true};
+const gh=(ruta,o={})=>fetch(REPO+ruta,{...o,cache:"no-store",headers:{Accept:"application/vnd.github+json",Authorization:"Bearer "+clave(),...(o.body?{"Content-Type":"application/json"}:{})}});
+function pintaUp(txt,err){
+  const u=UP,now=Date.now();
+  document.getElementById("upL").innerHTML=ETAPAS.map(([k,l],i)=>`<li class="${i<u.etapa||u.ok?"ok":i===u.etapa?(err?"ko":u.fin?"":"on"):""}">${l}</li>`).join("");
+  /* Progreso: etapas hechas + parte de la actual según lo que suele tardar (aprendido de veces anteriores) */
+  const dur=k=>u.est[k]||ETAPAS.find(e=>e[0]===k)[2];
+  const total=ETAPAS.reduce((a,[k])=>a+dur(k),0);
+  let hecho=ETAPAS.slice(0,u.etapa).reduce((a,[k])=>a+dur(k),0);
+  if(u.etapa<ETAPAS.length&&!u.ok){const k=ETAPAS[u.etapa][0];hecho+=dur(k)*Math.min(.92,(now-(u.desde[k]||now))/1000/dur(k))}
+  const pc=u.ok?100:Math.min(99,hecho/total*100);
+  const bar=document.getElementById("upBar");bar.classList.toggle("err",!!err);bar.firstElementChild.style.width=pc+"%";
+  document.getElementById("upTxt").textContent=txt||(u.ok?"¡Listo!":Math.round(pc)+" %");
+  const s=Math.round((now-u.t0)/1000);document.getElementById("upT").textContent=Math.floor(s/60)+":"+String(s%60).padStart(2,"0");
+}
+function pasa(k){const u=UP,i=ETAPAS.findIndex(e=>e[0]===k);if(i<=u.etapa&&u.desde[k])return;
+  for(let j=u.etapa;j<i;j++){const kk=ETAPAS[j][0];if(u.desde[kk]){u.est[kk]=Math.round(((u.est[kk]||ETAPAS[j][2])+(Date.now()-u.desde[kk])/1000)/2)}}
+  if(i>u.etapa)u.etapa=i;u.desde[k]=u.desde[k]||Date.now();
+  try{localStorage.setItem("upEst",JSON.stringify(u.est))}catch(e){}}
+function falla(txt){UP.fin=true;pintaUp(txt,true);try{localStorage.removeItem("upAct")}catch(e){}}
+async function bucle(){
+  const u=UP;const tic=setInterval(()=>{if(!u.fin)pintaUp()},500);
+  try{
+    pasa("pedir");pintaUp();
+    if(!u.run){
+      if(!u.pedido){const r=await gh("/actions/workflows/actualizar.yml/dispatches",{method:"POST",body:JSON.stringify({ref:"main",inputs:{modo:"rapida",id:u.id}})});
+        if(r.status===401)return falla("La clave no vale o ha caducado. Cámbiala en Ajustes.");
+        if(r.status===403||r.status===404)return falla("La clave no tiene permiso para actualizar.");
+        if(!r.ok)return falla("GitHub no ha respondido ("+r.status+"). Prueba en un rato.");
+        u.pedido=true;try{localStorage.setItem("upAct",JSON.stringify({id:u.id,t0:u.t0,ver:u.ver,run:null,pedido:true}))}catch(e){}}
+      for(let n=0;!u.run&&n<40;n++){await new Promise(r=>setTimeout(r,2500));
+        const r=await gh("/actions/workflows/actualizar.yml/runs?event=workflow_dispatch&per_page=10");if(!r.ok)continue;
+        const x=(await r.json()).workflow_runs.find(w=>w.display_title==="Actualizar "+u.id);if(x)u.run=x.id}
+      if(!u.run)return falla("GitHub no ha empezado la actualización. Prueba otra vez.");
+      try{localStorage.setItem("upAct",JSON.stringify({id:u.id,t0:u.t0,ver:u.ver,run:u.run}))}catch(e){}
+    }
+    pasa("cola");
+    /* Seguir los pasos de la ejecución en GitHub */
+    for(;;){await new Promise(r=>setTimeout(r,3000));
+      const r=await gh("/actions/runs/"+u.run);if(!r.ok)continue;const run=await r.json();
+      if(run.status==="completed"&&run.conclusion==="cancelled"){
+        /* Otra actualización ha ocupado su sitio: seguimos esa */
+        const q=await gh("/actions/workflows/actualizar.yml/runs?per_page=5");const o=q.ok?(await q.json()).workflow_runs.find(w=>w.status!=="completed"):null;
+        if(o){u.run=o.id;continue}return falla("La actualización se ha cancelado.")}
+      const j=await gh("/actions/runs/"+u.run+"/jobs");const steps=j.ok?((await j.json()).jobs[0]||{}).steps||[]:[];
+      const st=n=>steps.find(s=>s.name===n)||{};
+      if(st("Guardar cambios").status&&st("Guardar cambios").status!=="queued")pasa("guardar");
+      else if(st("Leer la web de la RFFM").status==="in_progress"||st("Leer la web de la RFFM").status==="completed")pasa("rffm");
+      else if(steps.some(s=>s.status!=="queued"))pasa("prep");
+      if(st("Leer la web de la RFFM").conclusion==="failure")return falla("La web de la RFFM no ha respondido bien. Siguen los datos de antes.");
+      if(run.status==="completed"){if(run.conclusion!=="success")return falla("No se ha podido terminar. Siguen los datos de antes.");break}
+    }
+    /* GitHub Pages tarda un poco en publicar el data.json nuevo */
+    pasa("publicar");
+    for(let n=0;n<100;n++){await new Promise(r=>setTimeout(r,4000));
+      const d=await fetch("data.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.json()).catch(()=>null);
+      if(d&&d.actualizado!==u.ver){pasa("fin");u.ok=true;u.fin=true;pintaUp();try{localStorage.removeItem("upAct")}catch(e){}
+        setTimeout(()=>location.reload(),1200);return}}
+    falla("Se ha leído todo, pero la app tarda en publicarse. Vuelve a abrirla en unos minutos.");
+  }catch(e){falla("Sin conexión. Prueba otra vez.")}
+  finally{clearInterval(tic)}
+}
+
+/* Al volver a la app (desde la pantalla de inicio el iPhone no recarga solo):
+   si hay datos nuevos o ha pasado un rato, se recarga la página entera. */
+let _loadedAt=Date.now(),_loadedVer=null;
+document.getElementById("reload").onclick=()=>{if(clave())actualizar();else location.reload()};
+document.addEventListener("visibilitychange",()=>{
+  if(document.visibilityState!=="visible")return;
+  if(Date.now()-_loadedAt>30*60e3)return location.reload();
+  fetch("data.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(d=>{if(_loadedVer&&d.actualizado!==_loadedVer)location.reload()}).catch(()=>{});
+});
+window.addEventListener("pageshow",e=>{if(e.persisted)location.reload()});
+
+/* ---- Fechas (hora de Madrid) ---- */
+const DIAS=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+const MESES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const hoyM=()=>new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Madrid"}).format(new Date());
+const D=iso=>{const [y,m,d]=iso.split("-").map(Number);return new Date(Date.UTC(y,m-1,d))};
+const suma=(iso,n)=>{const x=D(iso);x.setUTCDate(x.getUTCDate()+n);return x.toISOString().slice(0,10)};
+const lunesDe=iso=>suma(iso,-((D(iso).getUTCDay()+6)%7));
+const fCorta=iso=>{const x=D(iso);return x.getUTCDate()+" "+MESES[x.getUTCMonth()]};
+const min=h=>{const [a,b]=h.split(":").map(Number);return a*60+b};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* "C.D. BARAJAS 'B'" → "B"; nombres de clubes más cortos */
+const letra=e=>{const m=String(e).match(/'([A-Z0-9]+)'\s*$/);return m?m[1]:""};
+const corto=t=>String(t).replace(/^(C\.?\s?D\.?|A\.?\s?D\.?|C\.?\s?F\.?|E\.?\s?F\.?|U\.?\s?D\.?|S\.?\s?A\.?\s?D\.?|R\.?\s?S\.?\s?D\.?|ESC\.?\s?FUT\.?|A\.?\s?C\.?\s?D\.?|C\.?\s?D\.?\s?E\.?|E\.?\s?M\.?\s?F\.?|CDB|C\.?\s?D\.?\s?B\.?)\s+/i,"")
+  .toLowerCase().replace(/(^|[\s.'(-])([a-záéíóúñü])/g,(a,b,c)=>b+c.toUpperCase()).replace(/'([a-z])'/gi,(a,b)=>" "+b.toUpperCase()).replace(/ (De|Del|La|Las|Los|Y|El)(?= )/g,m=>m.toLowerCase()).trim();
+const nombreEq=p=>{const c=p.cat||(p.comp?p.comp.toLowerCase().replace(/(^|\s)\S/g,s=>s.toUpperCase()):"Equipo");
+  return c+(p.fem&&!/femen/i.test(c)?" fem.":"")+(letra(p.equipo)?" "+letra(p.equipo):"")};
+
+let DATA=null,P=[],tab="casa",fin=0;
+try{tab=localStorage.getItem("tab")||"casa"}catch(e){}
+
+function pinta(){
+  const hoy=hoyM(),L0=lunesDe(hoy);
+  const desde=suma(L0,7*fin),hasta=suma(desde,6);
+  const sab=suma(desde,5),dom=suma(desde,6);
+  const nom=fin===0?"Este fin de semana":fin===1?"El que viene":"Dentro de "+fin+" semanas";
+  document.getElementById("fin").innerHTML=`${nom}<span>${fCorta(sab)} – ${fCorta(dom)}</span>`;
+  document.getElementById("prev").disabled=fin<=0;
+  document.getElementById("next").disabled=fin>=2;
+  document.getElementById("title").textContent=tab==="casa"?"En casa":"Fuera";
+  document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.p===tab));
+
+  const lista=P.filter(p=>(tab==="casa")===p.local).filter(p=>{const f=p.fecha||p.fJornada;return f>=desde&&f<=hasta});
+  const m=document.getElementById("main");
+  if(!lista.length){m.innerHTML=`<div class="empty">${tab==="casa"?"Ningún partido en casa":"Ningún partido fuera"}</div>`;return}
+
+  /* Agrupar por día (los que aún no tienen día van al día de la jornada) */
+  const dias={};for(const p of lista){const f=p.fecha||p.fJornada;(dias[f]=dias[f]||[]).push(p)}
+  let h="";
+  for(const f of Object.keys(dias).sort()){
+    const ps=dias[f].sort((a,b)=>(a.hora||"99").localeCompare(b.hora||"99")||nombreEq(a).localeCompare(nombreEq(b)));
+    const con=ps.filter(p=>p.hora),sin=ps.length-con.length,x=D(f);
+    const sinDia=ps.every(p=>!p.fecha);
+    if(tab==="casa"){
+      /* Tarjeta del día: de qué hora a qué hora hay partidos y cuántos */
+      const ini=con.length?con[0].hora:null,ult=con.length?con[con.length-1].hora:null;
+      const bars=con.map(p=>{const a=Math.max(0,min(p.hora)-8*60),dur=(p.f7?60:p.cat==="Aficionado"||p.cat==="Senior"||p.cat==="Juvenil"?105:85);
+        return `<i style="left:${a/(14*60)*100}%;width:${Math.max(1.5,dur/(14*60)*100)}%"></i>`}).join("");
+      h+=`<div class="day"><div class="dn">${DIAS[x.getUTCDay()]} ${fCorta(f)}${sinDia?" · día por confirmar":""}</div>
+        <div class="big"><div class="rng">${ini?(ini===ult?ini:ini+" – "+ult):"Sin horario"}</div><div class="cnt">${ps.length} partido${ps.length>1?"s":""}</div></div>
+        ${sin&&con.length?`<div class="tbd">${sin} sin hora todavía</div>`:""}
+        ${con.length?`<div class="tl">${bars}</div><div class="tlx"><span>8:00</span><span>15:00</span><span>22:00</span></div>`:""}</div>`;
+    }else h+=`<div class="dayh">${DIAS[x.getUTCDay()]}<span>${fCorta(f)}${sinDia?" · día por confirmar":""}</span></div>`;
+    h+=`<div class="group">`+ps.map(p=>{
+      const tags=[!p.oficial&&p.hora?`<span class="tag prov">Provisional</span>`:"",p.cambios?`<span class="tag cam">Cambio</span>`:""].join(" ");
+      return `<div class="cell"><div class="hr${p.hora?"":" no"}">${p.hora||"--:--"}</div><div class="txt">
+        <div class="ttl"><b>${esc(nombreEq(p))}</b></div>
+        <div class="meta">vs ${esc(corto(p.rival))}</div>
+        ${p.campo&&tab==="fuera"?`<div class="meta">${esc(p.campo)}</div>`:""}
+        ${p.campo&&tab==="casa"&&!/BARAJAS|SOLEDAD/i.test(p.campo)?`<div class="meta">${esc(p.campo)}</div>`:""}
+        ${tags.trim()?`<div>${tags}</div>`:""}</div></div>`}).join("")+`</div>`;
+  }
+  if(lista.some(p=>!p.hora))h+=`<p class="note">Los horarios oficiales salen el lunes de cada semana.</p>`;
+  m.innerHTML=h;m.classList.remove("fade");void m.offsetWidth;m.classList.add("fade");
+}
+
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.p;try{localStorage.setItem("tab",tab)}catch(e){}pinta();window.scrollTo({top:0})});
+document.getElementById("prev").onclick=()=>{if(fin>0){fin--;pinta()}};
+document.getElementById("next").onclick=()=>{if(fin<2){fin++;pinta()}};
+
+function start(d){
+  DATA=d;P=d.partidos||[];_loadedVer=d.actualizado;
+  try{const a=JSON.parse(localStorage.getItem("upAct")||"null");if(a&&clave()&&Date.now()-a.t0<15*60e3)setTimeout(actualizar,300);else localStorage.removeItem("upAct")}catch(e){}
+  if(d.actualizado){const t=new Date(d.actualizado);
+    document.getElementById("foot").textContent="Actualizado "+t.toLocaleString("es-ES",{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Madrid"});
+    const hrs=(Date.now()-t)/36e5;const st=document.getElementById("stale");
+    if(hrs>30){st.hidden=false;st.textContent="Datos sin actualizar desde hace "+Math.round(hrs/24)+" día"+(hrs>=36?"s":"")}}
+  pinta();
+}
+fetch("data.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(start).catch(()=>{
+  document.getElementById("main").innerHTML='<div class="empty">Todavía no hay datos. Prueba en un rato.</div>';
+});
+</script>
+</body>
+</html>
