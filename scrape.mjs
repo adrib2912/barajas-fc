@@ -125,6 +125,16 @@ function rastrea(obj, equipos, grupos, padre = "") {
 }
 
 const norm = (t) => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z0-9]+/g, " ").trim();
+const fichas = (t) => norm(t).replace(/\bF ?7\b/g, "F7").replace(/\bF ?11\b/g, "F11").split(" ").filter(Boolean);
+// Parecido entre dos nombres: proporción de palabras que coinciden (una abreviatura vale: ALEV = ALEVIN)
+function parecido(a, b) {
+  const A = fichas(a), B = fichas(b);
+  if (!A.length || !B.length) return 0;
+  const igual = (x, y) => x === y || (x.length >= 4 && y.startsWith(x)) || (y.length >= 4 && x.startsWith(y));
+  const n = A.filter((x) => B.some((y) => igual(x, y))).length, m = B.filter((y) => A.some((x) => igual(x, y))).length;
+  const p = Math.min(n / A.length, m / B.length);
+  return n === A.length ? Math.max(p, 0.76) : p; // todas las palabras de la categoría están en la competición
+}
 let COMPS = []; // todas las competiciones de la temporada: {codigo, nombre, tipojuego}
 async function cargarCompeticiones() {
   if (COMPS.length) return COMPS;
@@ -180,9 +190,9 @@ async function descubrir() {
     const nombre = (t.nombre_equipo || vistos.get(cod) || "").trim();
     const cat = t.categoria || "";
     if (!cat) { console.error(`  Equipo ${cod} ${nombre}: sin categoría`); continue; }
-    // Competiciones con el mismo nombre que la categoría del equipo
-    let cands = COMPS.filter((c) => norm(c.nombre) === norm(cat));
-    if (!cands.length) cands = COMPS.filter((c) => norm(c.nombre).includes(norm(cat)) || norm(cat).includes(norm(c.nombre)));
+    // Competiciones con nombre parecido a la categoría del equipo ("ALEV.F-7" = "ALEVIN F-7", "F7" = "F-7")
+    const cands = COMPS.map((c) => ({ c, p: parecido(cat, c.nombre) })).filter((x) => x.p >= 0.75)
+      .sort((a, b) => b.p - a.p).slice(0, 4).map((x) => x.c);
     let hallado = null;
     for (const c of cands) {
       let gs = [];
