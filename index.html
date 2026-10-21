@@ -346,8 +346,17 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const letra=e=>{const m=String(e).match(/'([A-Z0-9]+)'\s*$/);return m?m[1]:""};
 const corto=t=>String(t).replace(/^(C\.?\s?D\.?|A\.?\s?D\.?|C\.?\s?F\.?|E\.?\s?F\.?|U\.?\s?D\.?|S\.?\s?A\.?\s?D\.?|R\.?\s?S\.?\s?D\.?|ESC\.?\s?FUT\.?|A\.?\s?C\.?\s?D\.?|C\.?\s?D\.?\s?E\.?|E\.?\s?M\.?\s?F\.?|CDB|C\.?\s?D\.?\s?B\.?)\s+/i,"")
   .toLowerCase().replace(/(^|[\s.'(-])([a-záéíóúñü])/g,(a,b,c)=>b+c.toUpperCase()).replace(/'([a-z])'/gi,(a,b)=>" "+b.toUpperCase()).replace(/ (De|Del|La|Las|Los|Y|El)(?= )/g,m=>m.toLowerCase()).trim();
-const nombreEq=p=>{const c=p.cat||(p.comp?p.comp.toLowerCase().replace(/(^|\s)\S/g,s=>s.toUpperCase()):"Equipo");
-  return c+(p.fem&&!/femen/i.test(c)?" fem.":"")+(letra(p.equipo)?" "+letra(p.equipo):"")};
+/* Nombres como los llama el club */
+const nombreEq=p=>{
+  let c=p.cat||(p.comp?p.comp.toLowerCase().replace(/(^|\s)\S/g,s=>s.toUpperCase()):"Equipo");
+  if(c==="Aficionado"||c==="Senior")c=p.fem?"Sénior":"Sénior masculino";
+  const l=letra(p.equipo),comp=(p.comp||"").toUpperCase();
+  if(p.fem)return c+" femenino";
+  if(c==="Alevín"&&/AUTON/.test(comp))return "Alevín Autonómica";
+  if(c==="Alevín"&&/^PRIMERA ALEV/.test(comp))return "Alevín Primera";
+  if(c==="Prebenjamín")return c;
+  return c+(l?" "+l:"");
+};
 
 let DATA=null,P=[],tab="casa",fin=0;
 const MAXFIN=5;
