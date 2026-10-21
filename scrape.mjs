@@ -4,7 +4,7 @@
 import { chromium } from "playwright";
 import fs from "node:fs";
 
-const CLUB = "42740";            // código del C.D. Barajas en la RFFM (sale en la dirección de su escudo)
+const CLUB = "1019";             // código del C.D. Barajas en la RFFM (codigo_club en la ficha de un equipo)
 const TEMP = "22";               // temporada 2026-2027 en la RFFM
 const EQUIPO_F7 = "24025221";    // femenino senior F7 (código de equipo conocido)
 // Grupos que se leen siempre, aunque no salgan en la ficha del club (por si acaso)
@@ -124,28 +124,81 @@ function rastrea(obj, equipos, grupos, padre = "") {
   for (const x of k) rastrea(obj[x], equipos, grupos, x);
 }
 
+const norm = (t) => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z0-9]+/g, " ").trim();
+let COMPS = []; // todas las competiciones de la temporada: {codigo, nombre, tipojuego}
+async function cargarCompeticiones() {
+  if (COMPS.length) return COMPS;
+  await page.goto(`${BASE}/competicion/calendario`, { waitUntil: "domcontentloaded", timeout: 90000 }).catch(() => {});
+  let tipos = [];
+  try { tipos = (await api("/api/game-types")).map((t) => String(t.codigo_tipo_juego ?? t.codigo)); } catch (e) { console.error("Tipos de juego:", e.message.split("\n")[0]); }
+  if (!tipos.length) tipos = ["1", "2", "3"];
+  for (const tj of tipos) {
+    try { for (const c of await api(`/api/competitions?temporada=${TEMP}&tipojuego=${tj}`)) COMPS.push({ codigo: String(c.codigo), nombre: c.nombre, tipojuego: tj }); }
+    catch (e) { console.error(`Competiciones tipo ${tj}:`, e.message.split("\n")[0]); }
+  }
+  console.log(`Competiciones de la temporada: ${COMPS.length}`);
+  return COMPS;
+}
+
+const CAL = new Map(); // calendario (datos de la página) de cada grupo, como texto, para buscar equipos
+async function calendarioTexto(c, g) {
+  const k = `${c.codigo}-${g}`;
+  if (!CAL.has(k)) {
+    const p = await datosPagina(`/competicion/calendario?temporada=${TEMP}&tipojuego=${c.tipojuego}&competicion=${c.codigo}&grupo=${g}`, null, 2);
+    let t = JSON.stringify({ ...p, global: undefined, notices: undefined, categories: undefined });
+    // Si la página no trae los partidos en sus datos, se abre con el navegador y se lee el texto
+    if (!/BARAJAS|equipo_local|"local"/i.test(t) && t.length < 20000) {
+      try {
+        await page.goto(`${BASE}/competicion/calendario?temporada=${TEMP}&tipojuego=${c.tipojuego}&competicion=${c.codigo}&grupo=${g}`, { waitUntil: "domcontentloaded", timeout: 60000 });
+        await page.waitForFunction(() => document.body.innerText.includes("VER ACTA"), null, { timeout: 30000 });
+        t = JSON.stringify(await page.evaluate(() => document.body.innerText.split("\n").map((x) => x.trim())));
+      } catch {}
+    }
+    if (CAL.size === 0) fs.writeFileSync(`${DEBUG}/calendario-datos.json`, t.slice(0, 300000));
+    CAL.set(k, t);
+  }
+  return CAL.get(k);
+}
+
 async function descubrir() {
   const vistos = new Map();
   const nuevosGrupos = new Map();
-  let props = await datosPagina(`/fichaclub/${CLUB}?temporada=${TEMP}`, "club");
-  if (!props.club) props = await datosPagina(`/fichaclub/${CLUB}`, "club", 2);
+  const props = await datosPagina(`/fichaclub/${CLUB}?temporada=${TEMP}`, "club");
   fs.writeFileSync(`${DEBUG}/club-datos.json`, JSON.stringify({ ...props, global: undefined, notices: undefined, categories: undefined }, null, 1).slice(0, 400000));
   rastrea(props.club, vistos, nuevosGrupos);
-  console.log(`Ficha del club: ${vistos.size} equipos, ${nuevosGrupos.size} grupos`);
   vistos.delete(CLUB);
+  console.log(`Ficha del club: ${vistos.size} equipos, ${nuevosGrupos.size} grupos`);
   if (!vistos.has(EQUIPO_F7)) vistos.set(EQUIPO_F7, "C.D. BARAJAS");
+  await cargarCompeticiones();
 
   const encontrados = [];
   let primero = true;
-  for (const [cod, nombre] of vistos) {
-    const p = await datosPagina(`/fichaequipo/${cod}?temporada=${TEMP}`, null, 2);
-    const datos = { ...p, global: undefined, notices: undefined, categories: undefined };
-    if (primero) { fs.writeFileSync(`${DEBUG}/equipo-datos.json`, JSON.stringify(datos, null, 1).slice(0, 400000)); primero = false; }
-    const eqs = new Map(), gs = new Map();
-    rastrea(datos, eqs, gs);
-    console.log(`  Equipo ${cod} ${nombre}: ${gs.size} grupo(s) · claves: ${Object.keys(datos).filter((x) => datos[x] != null).join(",")}`);
-    encontrados.push({ cod, nombre, grupos: [...gs.keys()] });
-    for (const [k, g] of gs) if (!nuevosGrupos.has(k)) nuevosGrupos.set(k, { ...g, equipo: nombre });
+  for (const [cod] of vistos) {
+    const p = await datosPagina(`/fichaequipo/${cod}?temporada=${TEMP}`, "team", 2);
+    const t = p.team || {};
+    if (primero) { fs.writeFileSync(`${DEBUG}/equipo-datos.json`, JSON.stringify({ team: t }, null, 1).slice(0, 200000)); primero = false; }
+    const nombre = (t.nombre_equipo || vistos.get(cod) || "").trim();
+    const cat = t.categoria || "";
+    if (!cat) { console.error(`  Equipo ${cod} ${nombre}: sin categoría`); continue; }
+    // Competiciones con el mismo nombre que la categoría del equipo
+    let cands = COMPS.filter((c) => norm(c.nombre) === norm(cat));
+    if (!cands.length) cands = COMPS.filter((c) => norm(c.nombre).includes(norm(cat)) || norm(cat).includes(norm(c.nombre)));
+    let hallado = null;
+    for (const c of cands) {
+      let gs = [];
+      try { gs = await api(`/api/groups?competicion=${c.codigo}`); } catch {}
+      for (const g of gs) {
+        const txt = await calendarioTexto(c, String(g.codigo));
+        if (txt.includes(`"${cod}"`) || txt.includes(JSON.stringify(nombre))) {
+          hallado = { competicion: c.codigo, grupo: String(g.codigo), tipojuego: c.tipojuego, comp: c.nombre, nombreGrupo: g.nombre };
+          break;
+        }
+      }
+      if (hallado) break;
+    }
+    console.log(`  ${nombre} · ${cat}: ${hallado ? `${hallado.comp} ${hallado.nombreGrupo}` : `NO ENCONTRADO (${cands.length} competiciones candidatas)`}`);
+    encontrados.push({ cod, nombre, cat, grupo: hallado ? clave(hallado) : null });
+    if (hallado && !nuevosGrupos.has(clave(hallado))) nuevosGrupos.set(clave(hallado), { ...hallado, equipo: nombre });
   }
   return { encontrados, nuevosGrupos };
 }
@@ -154,23 +207,15 @@ if (!RAPIDA || !grupos.length) {
   try {
     const { encontrados, nuevosGrupos } = await descubrir();
     for (const g of GRUPOS_FIJOS) if (!nuevosGrupos.has(clave(g))) nuevosGrupos.set(clave(g), { ...g });
-    // Nombres de competiciones y grupos (y su tipo de juego) desde la API de la RFFM
     const comps = {};
-    try {
-      const tipos = await api("/api/game-types");
-      for (const t of Array.isArray(tipos) ? tipos : []) {
-        const tj = String(t.codigo_tipo_juego ?? t.codigo ?? t.id ?? "");
-        if (!tj) continue;
-        try { for (const c of await api(`/api/competitions?temporada=${TEMP}&tipojuego=${tj}`)) comps[String(c.codigo)] = { nombre: c.nombre, tipojuego: tj }; } catch {}
-      }
-    } catch (e) { console.error("Tipos de juego:", e.message); }
+    for (const c of await cargarCompeticiones()) comps[c.codigo] = { nombre: c.nombre, tipojuego: c.tipojuego };
     console.log(`Competiciones conocidas: ${Object.keys(comps).length}`);
     const lista = [];
     for (const g of nuevosGrupos.values()) {
       const c = comps[g.competicion] || {};
-      let nombreGrupo = "";
-      try { nombreGrupo = ((await api(`/api/groups?competicion=${g.competicion}`)).find((x) => String(x.codigo) === g.grupo) || {}).nombre || ""; } catch {}
-      lista.push({ ...g, tipojuego: g.tipojuego || c.tipojuego || "1", comp: c.nombre || "", nombreGrupo });
+      let nombreGrupo = g.nombreGrupo || "";
+      if (!nombreGrupo) try { nombreGrupo = ((await api(`/api/groups?competicion=${g.competicion}`)).find((x) => String(x.codigo) === g.grupo) || {}).nombre || ""; } catch {}
+      lista.push({ ...g, tipojuego: g.tipojuego || c.tipojuego || "1", comp: g.comp || c.nombre || "", nombreGrupo });
     }
     if (lista.length > GRUPOS_FIJOS.length) {
       grupos = lista;
