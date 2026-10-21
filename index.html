@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Bar Barajas">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#000000">
-<script>if(/[?&]prueba/.test(location.search))document.documentElement.classList.add("prueba");try{document.documentElement.dataset.theme=localStorage.getItem("tema")||"dark";document.documentElement.dataset.size=localStorage.getItem("letra")||"n";}catch(e){document.documentElement.dataset.theme="dark";document.documentElement.dataset.size="n";}</script>
+<script>document.documentElement.classList.add("prueba");try{document.documentElement.dataset.theme=localStorage.getItem("tema")||"dark";document.documentElement.dataset.size=localStorage.getItem("letra")||"n";}catch(e){document.documentElement.dataset.theme="dark";document.documentElement.dataset.size="n";}</script>
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="escudo-192.png?v=3">
@@ -181,7 +181,7 @@ h2{font:700 22px/1.2 var(--font);margin:26px 4px 8px;letter-spacing:-.01em}
 .mini[open] .chev{transform:rotate(90deg)}
 .mini[open] summary{margin-bottom:8px}
 .day + .mini,.group + .mini{margin-top:-6px}
-/* ---- Prueba: escudos y tipos de partido ---- */
+/* ---- Escudos y tipos de partido ---- */
 :root{--f7:#40c8e0;--f11:#30d158;--may:#ff6b3d}
 .cr{width:34px;height:34px;flex:none;display:grid;place-items:center;position:relative}
 .cr img{width:34px;height:34px;object-fit:contain;background:#fff;border-radius:9px;padding:3px;box-sizing:border-box}
@@ -382,7 +382,7 @@ const nombreEq=p=>{
 };
 
 let DATA=null,P=[],tab="casa",fin=0;
-const PRUEBA=document.documentElement.classList.contains("prueba");
+const PRUEBA=true;
 /* Tipo de partido: fútbol 7 de base, fútbol 11 de base, o juvenil y sénior */
 const tipo=p=>/Juvenil|Aficionado|Senior|Sénior/.test(p.cat)?"may":p.f7?"f7":"f11";
 const TIPOS={f7:"Fútbol 7 base",f11:"Fútbol 11 base",may:"Juvenil y sénior"};
