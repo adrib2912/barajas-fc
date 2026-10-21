@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Bar Barajas">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#000000">
-<script>try{document.documentElement.dataset.theme=localStorage.getItem("tema")||"dark";document.documentElement.dataset.size=localStorage.getItem("letra")||"n";}catch(e){document.documentElement.dataset.theme="dark";document.documentElement.dataset.size="n";}</script>
+<script>if(/[?&]prueba/.test(location.search))document.documentElement.classList.add("prueba");try{document.documentElement.dataset.theme=localStorage.getItem("tema")||"dark";document.documentElement.dataset.size=localStorage.getItem("letra")||"n";}catch(e){document.documentElement.dataset.theme="dark";document.documentElement.dataset.size="n";}</script>
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="escudo-192.png?v=3">
@@ -181,6 +181,19 @@ h2{font:700 22px/1.2 var(--font);margin:26px 4px 8px;letter-spacing:-.01em}
 .mini[open] .chev{transform:rotate(90deg)}
 .mini[open] summary{margin-bottom:8px}
 .day + .mini,.group + .mini{margin-top:-6px}
+/* ---- Prueba: escudos y tipos de partido ---- */
+:root{--f7:#40c8e0;--f11:#30d158;--may:#ff6b3d}
+.cr{width:34px;height:34px;flex:none;display:grid;place-items:center;position:relative}
+.cr img{width:34px;height:34px;object-fit:contain;background:#fff;border-radius:9px;padding:3px;box-sizing:border-box}
+.cr i{display:none;width:34px;height:34px;border-radius:50%;background:var(--fill);color:var(--ink2);font:700 12px/34px var(--round);text-align:center;font-style:normal}
+.cr.x img{display:none}.cr.x i{display:block}
+.prueba .cell + .cell::before{left:124px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:1px}
+.dot.f7{background:var(--f7)}.dot.f11{background:var(--f11)}.dot.may{background:var(--may)}
+.tl i.bf7{background:var(--f7)}.tl i.bf11{background:var(--f11)}.tl i.bmay{background:var(--may)}
+.ag .ev.tf7{border-left:4px solid var(--f7)}.ag .ev.tf11{border-left:4px solid var(--f11)}.ag .ev.tmay{border-left:4px solid var(--may)}
+.ley{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--ink2);margin:0 4px 10px}
+.ley .dot{width:8px;height:8px;margin-right:5px}
 .foot{font-size:12px;color:var(--ink3);text-align:center;margin:22px 0 0}
 .hb{width:38px;height:38px;border-radius:50%;background:var(--card);display:grid;place-items:center;color:var(--blue);flex:none}
 </style>
@@ -369,6 +382,17 @@ const nombreEq=p=>{
 };
 
 let DATA=null,P=[],tab="casa",fin=0;
+const PRUEBA=document.documentElement.classList.contains("prueba");
+/* Tipo de partido: fútbol 7 de base, fútbol 11 de base, o juvenil y sénior */
+const tipo=p=>/Juvenil|Aficionado|Senior|Sénior/.test(p.cat)?"may":p.f7?"f7":"f11";
+const TIPOS={f7:"Fútbol 7 base",f11:"Fútbol 11 base",may:"Juvenil y sénior"};
+const ini2=t=>corto(t).replace(/\b(de|del|la|las|los|y|el)\b/gi,"").split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
+function escudo(p){
+  const nuestro=/^C\.?\s*D\.?\s+BARAJAS/i.test(p.rival);
+  const src=nuestro?"escudo-barajas.png":p.escRival;
+  return `<span class="cr${src?"":" x"}">${src?`<img src="${esc(src)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('x')">`:""}<i>${esc(ini2(p.rival))}</i></span>`;
+}
+const leyenda=()=>`<div class="ley">${Object.entries(TIPOS).map(([k,v])=>`<span><i class="dot ${k}"></i>${v}</span>`).join("")}</div>`;
 const MAXFIN=5;
 try{tab=localStorage.getItem("tab")||"casa"}catch(e){}
 const TITULOS={casa:"Local",fuera:"Visitante",cal:"Calendario"};
@@ -384,8 +408,8 @@ const finDe=()=>{const L0=lunesDe(hoyM()),desde=suma(L0,7*fin);return {desde,has
 function celda(p,vista){
   const otro=vista==="casa"&&!enSoledad(p);
   const tags=[otro?`<span class="tag otro">Otro campo</span>`:"",!p.oficial&&p.hora?`<span class="tag prov">Provisional</span>`:"",p.cambios?`<span class="tag cam">Cambio</span>`:""].filter(Boolean).join(" ");
-  return `<div class="cell${otro?" otro":""}"><div class="hr${p.hora?"":" no"}">${p.hora||"--:--"}</div><div class="txt">
-    <div class="ttl"><b>${esc(nombreEq(p))}</b></div>
+  return `<div class="cell${otro?" otro":""}"><div class="hr${p.hora?"":" no"}">${p.hora||"--:--"}</div>${PRUEBA?escudo(p):""}<div class="txt">
+    <div class="ttl">${PRUEBA?`<i class="dot ${tipo(p)}"></i>`:""}<b>${esc(nombreEq(p))}</b></div>
     <div class="meta">vs ${esc(corto(p.rival))}</div>
     ${p.campo&&(vista==="fuera"||otro)?`<div class="meta">${esc(p.campo)}</div>`:""}
     ${tags?`<div>${tags}</div>`:""}</div></div>`;
@@ -403,7 +427,7 @@ function listaDias(lista,vista){
       const plegados=otros.length?`<details class="mini"><summary>${sol.length?"":`<span class="md">${cab}</span>`}<span>${otros.length} de local en otro campo</span><svg class="chev" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5 6.5 6.5 1.5 11.5"/></svg></summary><div class="group">${otros.map(p=>celda(p,vista)).join("")}</div></details>`:"";
       if(!sol.length){h+=plegados;continue}
       const ini=con.length?con[0].hora:null,ult=con.length?con[con.length-1].hora:null;
-      const bars=con.map(p=>{const a=Math.max(0,min(p.hora)-8*60);return `<i style="left:${a/(14*60)*100}%;width:${Math.max(1.5,dura(p)/(14*60)*100)}%"></i>`}).join("");
+      const bars=con.map(p=>{const a=Math.max(0,min(p.hora)-8*60);return `<i class="${PRUEBA?"b"+tipo(p):""}" style="left:${a/(14*60)*100}%;width:${Math.max(1.5,dura(p)/(14*60)*100)}%"></i>`}).join("");
       h+=`<div class="day"><div class="dn">${cab}</div>
         <div class="big"><div class="rng">${ini?(ini===ult?ini:ini+" – "+ult):"Sin horario"}</div><div class="cnt">${sol.length} en la Soledad</div></div>
         ${sin&&con.length?`<div class="tbd">${sin} sin hora todavía</div>`:""}
@@ -439,7 +463,7 @@ function calendario(F){
 
   /* Agenda: una columna por día del fin de semana con partidos en la Soledad */
   const sem=P.filter(p=>enSoledad(p)&&p.hora&&diaDe(p)>=F.desde&&diaDe(p)<=F.hasta);
-  h+=`<h2>En la Soledad</h2>`;
+  h+=`<h2>En la Soledad</h2>`+(PRUEBA?leyenda():"");
   if(!sem.length)return h+`<div class="empty">Sin partidos con hora este fin de semana</div>`;
   const cols=[...new Set(sem.map(diaDe))].sort();
   let h0=Math.min(...sem.map(p=>Math.floor(min(p.hora)/60))),h1=Math.max(...sem.map(p=>Math.ceil((min(p.hora)+dura(p))/60)));
@@ -452,7 +476,7 @@ function calendario(F){
     const fin_=[];for(const p of ps){const a=min(p.hora);let c=fin_.findIndex(e=>e<=a);if(c<0){c=fin_.length;fin_.push(0)}fin_[c]=a+dura(p);p._c=c}
     const n=Math.max(1,fin_.length);
     return `<div class="col"><div class="ch">${DIAS[D(f).getUTCDay()].slice(0,3)} ${D(f).getUTCDate()}</div><div class="body" style="height:${alto}px">`+
-      ps.map(p=>{const top=(min(p.hora)-h0*60)*PX;return `<div class="ev${p.oficial?"":" prov"}" style="top:${top}px;height:${dura(p)*PX}px;left:${p._c/n*100}%;width:${100/n}%"><b>${p.hora}</b>${esc(nombreEq(p))}</div>`}).join("")+`</div></div>`}).join("")+`</div>`;
+      ps.map(p=>{const top=(min(p.hora)-h0*60)*PX;return `<div class="ev${p.oficial?"":" prov"}${PRUEBA?" t"+tipo(p):""}" style="top:${top}px;height:${dura(p)*PX}px;left:${p._c/n*100}%;width:${100/n}%"><b>${p.hora}</b>${esc(nombreEq(p))}</div>`}).join("")+`</div></div>`}).join("")+`</div>`;
   return h;
 }
 
@@ -468,7 +492,7 @@ function pinta(){
   if(tab==="cal")m.innerHTML=calendario(F);
   else{
     const lista=P.filter(p=>(tab==="casa")===p.local).filter(p=>diaDe(p)>=F.desde&&diaDe(p)<=F.hasta);
-    m.innerHTML=lista.length?listaDias(lista,tab):`<div class="empty">${tab==="casa"?"Ningún partido de local":"Ningún partido de visitante"}</div>`;
+    m.innerHTML=lista.length?(PRUEBA&&tab==="casa"?leyenda():"")+listaDias(lista,tab):`<div class="empty">${tab==="casa"?"Ningún partido de local":"Ningún partido de visitante"}</div>`;
   }
   m.querySelectorAll(".cd[data-f]").forEach(b=>b.onclick=()=>{fin=Math.round((D(lunesDe(b.dataset.f))-D(lunesDe(hoyM())))/(7*864e5));pinta()});
   m.classList.remove("fade");void m.offsetWidth;m.classList.add("fade");

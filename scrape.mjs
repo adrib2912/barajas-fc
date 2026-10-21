@@ -315,7 +315,9 @@ async function leerActa(url) {
   if (!game) throw new Error("acta vacía");
   const f = String(game.fecha || "").match(/(\d\d)-(\d\d)-(\d{4})/);
   const hora = /^\d{1,2}:\d\d$/.test(game.hora || "") && game.hora !== "00:00" ? game.hora : null;
-  return { fecha: f ? `${f[3]}-${f[2]}-${f[1]}` : null, hora, campo: (game.campo || "").trim() || null, casa: (game.equipo_local || "").trim() || null };
+  const img = (x) => (/^\/pnfg\/pimg\//.test(x || "") ? "https://appweb.rffm.es" + encodeURI(decodeURI(x.trim())) : null);
+  return { fecha: f ? `${f[3]}-${f[2]}-${f[1]}` : null, hora, campo: (game.campo || "").trim() || null, casa: (game.equipo_local || "").trim() || null,
+    escL: img(game.escudo_local), escV: img(game.escudo_visitante) };
 }
 
 // Se abren primero los partidos más cercanos. Se relee un acta si no se tiene, si ya debería
@@ -326,7 +328,7 @@ for (const p of encontrados) {
   if (!p.acta) continue;
   const c = actas[p.acta];
   const cerca = p.fJornada <= sumaDias(HOY, 8);
-  const viejo = !c || (!c.of && yaOficial(p.fJornada)) || (cerca && Date.now() - (c.t || 0) > 3 * 3600e3) || !c.hora;
+  const viejo = !c || (!c.of && yaOficial(p.fJornada)) || (cerca && Date.now() - (c.t || 0) > 3 * 3600e3) || !c.hora || !("escV" in c);
   if (!viejo) continue;
   if (minutos() > LIMITE) { console.error("Se acaba el tiempo; quedan actas sin leer"); break; }
   try {
@@ -362,6 +364,7 @@ const partidos = encontrados.map((p) => {
     grupo: p.gr.nombreGrupo || "",
     equipo: nuestro.trim(),
     rival: (esBarajas(p.local) ? p.visit : p.local).trim(),
+    escRival: (local ? a.escV : a.escL) || null,
     local,
     jornada: p.j,
     fJornada: p.fJornada,
