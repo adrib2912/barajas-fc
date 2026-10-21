@@ -1,57 +1,5 @@
 [
  {
-  "url": "https://www.rffm.es/api/game-types",
-  "body": [
-   {
-    "codigo_tipo_juego": "1",
-    "nombre": "Futbol-11"
-   },
-   {
-    "codigo_tipo_juego": "2",
-    "nombre": "Futbol-7"
-   },
-   {
-    "codigo_tipo_juego": "3",
-    "nombre": "Fútbol Sala"
-   },
-   {
-    "codigo_tipo_juego": "4",
-    "nombre": "Fútbol-5"
-   },
-   {
-    "codigo_tipo_juego": "5",
-    "nombre": "Fútbol-Playa"
-   }
-  ]
- },
- {
-  "url": "https://www.rffm.es/api/groups?competicion=26738230",
-  "body": [
-   {
-    "codigo": "26738231",
-    "nombre": "Grupo 1",
-    "total_jornadas": "26",
-    "total_equipos": "13",
-    "clasificacion_porteros": "0",
-    "ver_clasificacion": "1",
-    "clasificacion_goleadores": "1",
-    "orden": "10",
-    "nombre_delegacion": "CENTRAL R.F.F.M."
-   },
-   {
-    "codigo": "26738232",
-    "nombre": "Grupo 2",
-    "total_jornadas": "26",
-    "total_equipos": "14",
-    "clasificacion_porteros": "0",
-    "ver_clasificacion": "1",
-    "clasificacion_goleadores": "1",
-    "orden": "20",
-    "nombre_delegacion": "CENTRAL R.F.F.M."
-   }
-  ]
- },
- {
   "url": "https://www.rffm.es/api/groups?competicion=26738230",
   "body": [
    {

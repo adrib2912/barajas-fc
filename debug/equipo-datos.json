@@ -1,0 +1,146 @@
+{
+ "team": {
+  "estado": "1",
+  "sesion_ok": "1",
+  "codigo_equipo": "24025221",
+  "codigo_club": "1019",
+  "clave_acceso": "1019",
+  "nombre_equipo": "C.D. BARAJAS",
+  "escudo_club": "/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg",
+  "nombre_club": "C.D. BARAJAS",
+  "categoria": "PRIMERA FEMENINO SENIOR F-7",
+  "codigo_categoria": "13530053",
+  "portal_web": "www.cdbarajas.com",
+  "codigo_campo": "708",
+  "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
+  "foto_campo": "",
+  "campo_entrenamiento": "",
+  "titular_correspondencia": "JOSE Mª MUÑOZ SEVILLANO",
+  "tratamiento_correspondencia": "",
+  "domicilio_correspondencia": "C/ AYERBE, 16",
+  "localidad_correspondencia": "Madrid",
+  "provincia_correspondencia": "Madrid",
+  "codigo_postal_correspondencia": "28042",
+  "email_correspondencia": "cd.barajas@hotmail.es",
+  "telefonos": "699707552606217604699707552",
+  "jugar_dia": "",
+  "jugar_horario": "",
+  "fax": "913292218",
+  "delegados_equipo": [
+   {
+    "cod_delegado": "28337986",
+    "nombre": "GALIANO RODRIGUEZ, MANUEL"
+   }
+  ],
+  "auxiliares_equipo": [],
+  "tecnicos_equipo": [
+   {
+    "cod_tecnico": "28341547",
+    "nombre": "MARIN POVEDA, FELIX"
+   }
+  ],
+  "jugadores_equipo": [
+   {
+    "cod_jugador": "23153147",
+    "nombre": "BARRETO CRESPO, ADRIANA"
+   },
+   {
+    "cod_jugador": "25113528",
+    "nombre": "BLANCO CABELLO, LAURA"
+   },
+   {
+    "cod_jugador": "25353170",
+    "nombre": "CARRIÓN SERRANO, ELENA"
+   },
+   {
+    "cod_jugador": "10701823",
+    "nombre": "CORNEJO HERNANDEZ, DIANA STEFANY"
+   },
+   {
+    "cod_jugador": "25354559",
+    "nombre": "GUTIÉRREZ MARTINEZ, LAURA"
+   },
+   {
+    "cod_jugador": "25771475",
+    "nombre": "KHALIFI KADDUR MAIMON, YASMIN"
+   },
+   {
+    "cod_jugador": "25114018",
+    "nombre": "LOPEZ CERVERA, CHANTAL"
+   },
+   {
+    "cod_jugador": "153023",
+    "nombre": "LÓPEZ RANZ, CAROLINA"
+   },
+   {
+    "cod_jugador": "2801162",
+    "nombre": "LORENZO PAVON, MARIA"
+   },
+   {
+    "cod_jugador": "1072187",
+    "nombre": "MARIN NUÑEZ, GEMA"
+   },
+   {
+    "cod_jugador": "25448649",
+    "nombre": "MORENO PERALES, MARTA"
+   },
+   {
+    "cod_jugador": "25202796",
+    "nombre": "NUÑEZ MARTIN, PAULA"
+   },
+   {
+    "cod_jugador": "25202816",
+    "nombre": "RODRÍGUEZ ORTEGA, PAULA"
+   },
+   {
+    "cod_jugador": "25355874",
+    "nombre": "SAENZ CASADO, ISABEL"
+   },
+   {
+    "cod_jugador": "25201303",
+    "nombre": "SERANTES ELKINS, SAMANTHA ELIZABETH"
+   },
+   {
+    "cod_jugador": "25114433",
+    "nombre": "SEVILLANO VILLAGARCIA, ANGELA"
+   },
+   {
+    "cod_jugador": "26122536",
+    "nombre": "YNAYADO ENRIQUEZ, BETINA GISEL"
+   }
+  ],
+  "equipaciones": [
+   {
+    "camiseta": "AMARILLA Y NEGRA RAYAS",
+    "pantalon": "NEGRO",
+    "medias": "AMARILLAS "
+   }
+  ],
+  "equipacion1_diseno": [
+   {
+    "cod_tipo_camiseta": "17",
+    "nombre_camiseta": "Rayas anchas",
+    "clase_css_camiseta": "shirt faf faf-barres3",
+    "color_camiseta1": "#000000",
+    "color_camiseta2": "#FFE151",
+    "cod_tipo_pantalon": "1",
+    "nombre_pantalon": "Base",
+    "clase_css_pantalon": "shirt faf faf-pantalons",
+    "color_pantalon1": "#000000",
+    "color_pantalon2": "#FFFFFF",
+    "cod_tipo_medias": "1",
+    "nombre_medias": "Base",
+    "clase_css_medias": "socks faf faf-mitgetes",
+    "color_medias1": "#FFE151",
+    "color_medias2": "#FFFFFF"
+   }
+  ],
+  "host": "https://appweb.rffm.es/"
+ },
+ "query": {
+  "temporada": "22",
+  "codficha": [
+   "24025221"
+  ]
+ }
+}

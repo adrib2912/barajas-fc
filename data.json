@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T08:51:39.902Z",
+ "actualizado": "2026-10-21T09:02:19.788Z",
  "lunes": "2026-10-19",
  "equipos": [],
  "grupos": [
@@ -26,10 +26,10 @@
    "local": false,
    "jornada": 3,
    "fJornada": "2026-10-24",
-   "fecha": null,
-   "hora": null,
-   "campo": null,
-   "oficial": false,
+   "fecha": "2026-10-25",
+   "hora": "18:00",
+   "campo": "VILLAVICIOSA DE ODÓN F7 C-1 (HA)",
+   "oficial": true,
    "jugado": false
   },
   {
@@ -45,9 +45,9 @@
    "local": true,
    "jornada": 4,
    "fJornada": "2026-10-31",
-   "fecha": null,
+   "fecha": "2026-10-31",
    "hora": null,
-   "campo": null,
+   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
    "oficial": false,
    "jugado": false
   },
@@ -64,12 +64,37 @@
    "local": false,
    "jornada": 5,
    "fJornada": "2026-11-07",
-   "fecha": null,
+   "fecha": "2026-11-07",
    "hora": null,
-   "campo": null,
+   "campo": "ALCALA - COLEGIO SAN GABRIEL (HA)",
    "oficial": false,
    "jugado": false
   }
  ],
- "actas": {}
+ "actas": {
+  "https://www.rffm.es/acta-partido/5697438?temporada=22&competicion=26738230&grupo=26738231": {
+   "fecha": "2026-10-25",
+   "hora": "18:00",
+   "campo": "VILLAVICIOSA DE ODÓN F7 C-1 (HA)",
+   "casa": "A.D. VILLAVICIOSA DE ODON 'B'",
+   "of": true,
+   "t": 1792573338118
+  },
+  "https://www.rffm.es/acta-partido/5697445?temporada=22&competicion=26738230&grupo=26738231": {
+   "fecha": "2026-10-31",
+   "hora": null,
+   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
+   "casa": "C.D. BARAJAS",
+   "of": false,
+   "t": 1792573338423
+  },
+  "https://www.rffm.es/acta-partido/5697451?temporada=22&competicion=26738230&grupo=26738231": {
+   "fecha": "2026-11-07",
+   "hora": null,
+   "campo": "ALCALA - COLEGIO SAN GABRIEL (HA)",
+   "casa": "S.A.D. COLEGIO SAN GABRIEL",
+   "of": false,
+   "t": 1792573339787
+  }
+ }
 }
