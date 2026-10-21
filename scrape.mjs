@@ -6,6 +6,7 @@ import fs from "node:fs";
 
 const CLUB = "42740";            // código del C.D. Barajas en la RFFM (sale en la dirección de su escudo)
 const TEMP = "22";               // temporada 2026-2027 en la RFFM
+const EQUIPO_F7 = "24025221";    // femenino senior F7 (código de equipo conocido)
 // Grupos que se leen siempre, aunque no salgan en la ficha del club (por si acaso)
 const GRUPOS_FIJOS = [
   { tipojuego: "2", competicion: "26738230", grupo: "26738231" }, // Femenino senior F7
@@ -85,46 +86,66 @@ let equipos = previo.equipos || [];
 let grupos = previo.grupos || []; // [{tipojuego, competicion, grupo, comp, nombreGrupo, equipo}]
 const clave = (g) => `${g.competicion}-${g.grupo}`;
 
-async function descubrir() {
-  await page.goto(`${BASE}/fichaclub/${CLUB}?temporada=${TEMP}`, { waitUntil: "domcontentloaded", timeout: 90000 });
-  await page.waitForFunction(() => document.querySelectorAll('a[href*="/fichaequipo/"]').length > 0, null, { timeout: 45000 }).catch(() => {});
-  await page.waitForTimeout(2500);
-  await vuelca("club");
-  const html = await page.content();
-  const vistos = new Map();
-  for (const l of await page.evaluate(() => [...document.querySelectorAll('a[href*="/fichaequipo/"]')].map((a) => ({ h: a.href, t: a.innerText.trim().replace(/\s+/g, " ") })))) {
-    const m = l.h.match(/fichaequipo\/(\d+)/);
-    if (m && !vistos.get(m[1])) vistos.set(m[1], l.t);
+// La RFFM mete los datos de cada página dentro del HTML (__NEXT_DATA__). Leerlos así es más rápido que
+// esperar a que se dibuje la página. A veces vienen vacíos: se reintenta.
+async function datosPagina(ruta, campo, intentos = 3) {
+  let ultimo = null;
+  for (let i = 1; i <= intentos; i++) {
+    try {
+      const r = await page.request.get(BASE + ruta, { timeout: 45000, headers: { accept: "text/html" } });
+      const h = await r.text();
+      const m = h.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+      if (!m) throw new Error(`sin datos (HTTP ${r.status()})`);
+      const props = JSON.parse(m[1]).props?.pageProps || {};
+      ultimo = props;
+      const lleno = campo ? props[campo] : Object.keys(props).some((x) => !["global", "notices", "categories", "seasonName"].includes(x) && props[x]);
+      if (lleno) return props;
+      if (i === intentos) console.error(`${ruta}: '${campo || "datos"}' vacío tras ${intentos} intentos`);
+    } catch (e) { if (i === intentos) console.error(`${ruta}: ${e.message.split("\n")[0]}`); }
+    await page.waitForTimeout(2500 * i);
   }
-  for (const m of html.matchAll(/fichaequipo\/(\d+)/g)) if (!vistos.has(m[1])) vistos.set(m[1], "");
-  for (const m of html.matchAll(/codigo_equipo\\?"\s*:\s*\\?"?(\d+)/g)) if (!vistos.has(m[1])) vistos.set(m[1], "");
-  console.log(`Ficha del club: ${vistos.size} equipos`);
+  return ultimo || {};
+}
+// Recorre cualquier objeto buscando equipos (código + nombre) y parejas competición/grupo
+function rastrea(obj, equipos, grupos, padre = "") {
+  if (!obj || typeof obj !== "object") return;
+  if (Array.isArray(obj)) { for (const x of obj) rastrea(x, equipos, grupos, padre); return; }
+  const k = Object.keys(obj);
+  const kEq = k.find((x) => /^(codigo_equipo|cod_equipo|codequipo|codigo)$/i.test(x));
+  const kNom = k.find((x) => /^(nombre_equipo|nombre|equipo)$/i.test(x));
+  if (kEq && kNom && /equipo/i.test(kEq + kNom + padre) && /^\d+$/.test(String(obj[kEq])) && typeof obj[kNom] === "string")
+    equipos.set(String(obj[kEq]), obj[kNom].trim());
+  const kC = k.find((x) => /^(codigo_competicion|cod_competicion|competicion)$/i.test(x));
+  const kG = k.find((x) => /^(codigo_grupo|cod_grupo|grupo)$/i.test(x));
+  if (kC && kG && /^\d+$/.test(String(obj[kC])) && /^\d+$/.test(String(obj[kG]))) {
+    const tj = k.find((x) => /tipo_?juego/i.test(x));
+    grupos.set(`${obj[kC]}-${obj[kG]}`, { competicion: String(obj[kC]), grupo: String(obj[kG]), tipojuego: tj ? String(obj[tj]) : null });
+  }
+  for (const x of k) rastrea(obj[x], equipos, grupos, x);
+}
+
+async function descubrir() {
+  const vistos = new Map();
+  const nuevosGrupos = new Map();
+  let props = await datosPagina(`/fichaclub/${CLUB}?temporada=${TEMP}`, "club");
+  if (!props.club) props = await datosPagina(`/fichaclub/${CLUB}`, "club", 2);
+  fs.writeFileSync(`${DEBUG}/club-datos.json`, JSON.stringify({ ...props, global: undefined, notices: undefined, categories: undefined }, null, 1).slice(0, 400000));
+  rastrea(props.club, vistos, nuevosGrupos);
+  console.log(`Ficha del club: ${vistos.size} equipos, ${nuevosGrupos.size} grupos`);
+  vistos.delete(CLUB);
+  if (!vistos.has(EQUIPO_F7)) vistos.set(EQUIPO_F7, "C.D. BARAJAS");
 
   const encontrados = [];
-  const nuevosGrupos = new Map();
   let primero = true;
   for (const [cod, nombre] of vistos) {
-    try {
-      await page.goto(`${BASE}/fichaequipo/${cod}?temporada=${TEMP}`, { waitUntil: "domcontentloaded", timeout: 60000 });
-      await page.waitForFunction(() => /JUGADORES \(\d+\)|grupo=/.test(document.body.innerText + document.body.innerHTML.slice(0, 400000)), null, { timeout: 30000 }).catch(() => {});
-      await page.waitForTimeout(1200);
-      if (primero) { await vuelca("equipo-ejemplo"); primero = false; }
-      const h = await page.content();
-      const hrefs = await page.evaluate(() => [...document.querySelectorAll("a[href]")].map((a) => a.href).filter((x) => /grupo=\d/.test(x)));
-      const titulo = await page.evaluate(() => (document.querySelector("h1,h2")?.innerText || "").trim());
-      const gs = new Map();
-      for (const x of hrefs) {
-        const u = new URL(x);
-        const c = u.searchParams.get("competicion"), g = u.searchParams.get("grupo");
-        if (c && g) gs.set(`${c}-${g}`, { competicion: c, grupo: g, tipojuego: u.searchParams.get("tipojuego") });
-      }
-      for (const m of h.matchAll(/competicion=(\d+)(?:&|&amp;|\\u0026)grupo=(\d+)/g)) if (!gs.has(`${m[1]}-${m[2]}`)) gs.set(`${m[1]}-${m[2]}`, { competicion: m[1], grupo: m[2] });
-      for (const m of h.matchAll(/codigo_competicion\\?"\s*:\s*\\?"?(\d+)[\s\S]{0,400}?codigo_grupo\\?"\s*:\s*\\?"?(\d+)/g)) if (!gs.has(`${m[1]}-${m[2]}`)) gs.set(`${m[1]}-${m[2]}`, { competicion: m[1], grupo: m[2] });
-      const nom = nombre || titulo;
-      console.log(`  Equipo ${cod} ${nom}: ${gs.size} grupo(s)`);
-      encontrados.push({ cod, nombre: nom, grupos: [...gs.keys()] });
-      for (const [k, g] of gs) if (!nuevosGrupos.has(k)) nuevosGrupos.set(k, { ...g, equipo: nom });
-    } catch (e) { console.error(`  Equipo ${cod}: ${e.message.split("\n")[0]}`); }
+    const p = await datosPagina(`/fichaequipo/${cod}?temporada=${TEMP}`, null, 2);
+    const datos = { ...p, global: undefined, notices: undefined, categories: undefined };
+    if (primero) { fs.writeFileSync(`${DEBUG}/equipo-datos.json`, JSON.stringify(datos, null, 1).slice(0, 400000)); primero = false; }
+    const eqs = new Map(), gs = new Map();
+    rastrea(datos, eqs, gs);
+    console.log(`  Equipo ${cod} ${nombre}: ${gs.size} grupo(s) · claves: ${Object.keys(datos).filter((x) => datos[x] != null).join(",")}`);
+    encontrados.push({ cod, nombre, grupos: [...gs.keys()] });
+    for (const [k, g] of gs) if (!nuevosGrupos.has(k)) nuevosGrupos.set(k, { ...g, equipo: nombre });
   }
   return { encontrados, nuevosGrupos };
 }
@@ -138,7 +159,7 @@ if (!RAPIDA || !grupos.length) {
     try {
       const tipos = await api("/api/game-types");
       for (const t of Array.isArray(tipos) ? tipos : []) {
-        const tj = String(t.codigo ?? t.id ?? "");
+        const tj = String(t.codigo_tipo_juego ?? t.codigo ?? t.id ?? "");
         if (!tj) continue;
         try { for (const c of await api(`/api/competitions?temporada=${TEMP}&tipojuego=${tj}`)) comps[String(c.codigo)] = { nombre: c.nombre, tipojuego: tj }; } catch {}
       }
@@ -234,19 +255,12 @@ for (const g of grupos) {
 
 // ---------- 3. ACTAS: día, hora y campo ----------
 async function leerActa(url) {
-  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-  await page.waitForFunction(() => document.body.innerText.includes("TERRENO DE JUEGO"), null, { timeout: 40000 });
-  await page.waitForTimeout(600);
-  const t = await page.evaluate(() => document.body.innerText);
-  const L = t.split("\n").map((x) => x.trim()).filter(Boolean);
-  const fh = t.match(/(\d\d)-(\d\d)-(\d{4})\s*\/\s*(\d{1,2}:\d\d)/);
-  const iT = L.indexOf("TERRENO DE JUEGO");
-  const campo = iT >= 0 && L[iT + 1] && !/^Patrocinador/i.test(L[iT + 1]) ? L[iT + 1] : null;
-  let casa = null;
-  for (const s of await page.evaluate(() => [...document.querySelectorAll('script[type="application/ld+json"]')].map((x) => x.textContent))) {
-    try { const ev = JSON.parse(s); if (ev["@type"] === "SportsEvent" && ev.homeTeam?.name) casa = ev.homeTeam.name.trim(); } catch {}
-  }
-  return { fecha: fh ? `${fh[3]}-${fh[2]}-${fh[1]}` : null, hora: fh && fh[4] !== "00:00" ? fh[4] : null, campo, casa };
+  const u = new URL(url);
+  const { game } = await datosPagina(u.pathname + u.search, "game", 3);
+  if (!game) throw new Error("acta vacía");
+  const f = String(game.fecha || "").match(/(\d\d)-(\d\d)-(\d{4})/);
+  const hora = /^\d{1,2}:\d\d$/.test(game.hora || "") && game.hora !== "00:00" ? game.hora : null;
+  return { fecha: f ? `${f[3]}-${f[2]}-${f[1]}` : null, hora, campo: (game.campo || "").trim() || null, casa: (game.equipo_local || "").trim() || null };
 }
 
 // Se abren primero los partidos más cercanos. Se relee un acta si no se tiene, si ya debería
@@ -269,7 +283,6 @@ for (const p of encontrados) {
     nActas++;
   } catch (e) {
     console.error(`Acta ${p.acta}: ${e.message.split("\n")[0]}`);
-    if (!nActas && !fs.existsSync(`${DEBUG}/acta-error.txt`)) await vuelca("acta-error");
   }
 }
 console.log(`Actas leídas: ${nActas}`);
