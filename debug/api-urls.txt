@@ -16,7 +16,6 @@ https://www.rffm.es/api/groups?competicion=26738324
 https://www.rffm.es/api/groups?competicion=26738066
 https://www.rffm.es/api/groups?competicion=26738141
 https://www.rffm.es/api/groups?competicion=26738071
-https://www.rffm.es/api/groups?competicion=26738158
 https://www.rffm.es/api/groups?competicion=26737943
 https://www.rffm.es/api/groups?competicion=26738167
 https://www.rffm.es/api/groups?competicion=26797573
