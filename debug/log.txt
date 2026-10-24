@@ -22,13 +22,11 @@ PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 5 partido(s) nuestros en 
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 5 partido(s) nuestros en la ventana
 /acta-partido/5661200?temporada=22&competicion=26737768&grupo=26737786: 'game' vacío tras 3 intentos
 Acta https://www.rffm.es/acta-partido/5661200?temporada=22&competicion=26737768&grupo=26737786: acta vacía
-/acta-partido/5618306?temporada=22&competicion=26738141&grupo=26738156: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5618306?temporada=22&competicion=26738141&grupo=26738156: acta vacía
-/acta-partido/5681589?temporada=22&competicion=26737881&grupo=26737883: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5681589?temporada=22&competicion=26737881&grupo=26737883: acta vacía
-/acta-partido/5668329?temporada=22&competicion=26738324&grupo=26738345: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5668329?temporada=22&competicion=26738324&grupo=26738345: acta vacía
-/acta-partido/5725469?temporada=22&competicion=26737899&grupo=26750861: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5725469?temporada=22&competicion=26737899&grupo=26750861: acta vacía
-Actas leídas: 61
+/acta-partido/5725454?temporada=22&competicion=26737899&grupo=26750861: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5725454?temporada=22&competicion=26737899&grupo=26750861: acta vacía
+/acta-partido/5618321?temporada=22&competicion=26738141&grupo=26738156: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5618321?temporada=22&competicion=26738141&grupo=26738156: acta vacía
+/acta-partido/5681596?temporada=22&competicion=26737881&grupo=26737883: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5681596?temporada=22&competicion=26737881&grupo=26737883: acta vacía
+Actas leídas: 62
 data.json: 132 partidos (65 en casa) · 20/20 grupos leídos
