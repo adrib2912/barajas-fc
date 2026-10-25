@@ -23,15 +23,11 @@ PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 5 partido(s) nuestros en 
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 5 partido(s) nuestros en la ventana
 /acta-partido/5613331?temporada=22&competicion=26737724&grupo=26737731: 'game' vacío tras 3 intentos
 Acta https://www.rffm.es/acta-partido/5613331?temporada=22&competicion=26737724&grupo=26737731: acta vacía
-/acta-partido/5653212?temporada=22&competicion=26737768&grupo=26737787: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5653212?temporada=22&competicion=26737768&grupo=26737787: acta vacía
-/acta-partido/5697458?temporada=22&competicion=26738230&grupo=26738231: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5697458?temporada=22&competicion=26738230&grupo=26738231: acta vacía
-/acta-partido/5605932?temporada=22&competicion=26737819&grupo=26737822: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5605932?temporada=22&competicion=26737819&grupo=26737822: acta vacía
-/acta-partido/5665157?temporada=22&competicion=26738324&grupo=26738343: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5665157?temporada=22&competicion=26738324&grupo=26738343: acta vacía
-/acta-partido/5725469?temporada=22&competicion=26737899&grupo=26750861: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5725469?temporada=22&competicion=26737899&grupo=26750861: acta vacía
-Actas leídas: 66
+/acta-partido/5661207?temporada=22&competicion=26737768&grupo=26737786: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5661207?temporada=22&competicion=26737768&grupo=26737786: acta vacía
+/acta-partido/5596041?temporada=22&competicion=26738066&grupo=26738068: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5596041?temporada=22&competicion=26738066&grupo=26738068: acta vacía
+/acta-partido/5602189?temporada=22&competicion=26737751&grupo=26737758: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5602189?temporada=22&competicion=26737751&grupo=26737758: acta vacía
+Actas leídas: 61
 data.json: 132 partidos (65 en casa) · 21/21 grupos leídos
