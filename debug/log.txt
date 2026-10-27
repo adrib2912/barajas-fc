@@ -1,39 +1,4 @@
-Modo completo · semana del 2026-10-26 · ventana 2026-10-25 a 2026-12-06
-Ficha del club: 24 equipos, 0 grupos
-Competiciones de la temporada: 117
-/fichaequipo/139?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 139 C.D. BARAJAS: sin categoría
-/fichaequipo/140?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 140 C.D. BARAJAS 'A': sin categoría
-/fichaequipo/10642928?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 10642928 C.D. BARAJAS 'B': sin categoría
-  C.D. BARAJAS 'A' · PRIMERA CADETE: PRIMERA CADETE Grupo 6
-/fichaequipo/6816915?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 6816915 C.D. BARAJAS 'B': sin categoría
-/fichaequipo/17140328?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 17140328 C.D. BARAJAS 'C': sin categoría
-/fichaequipo/142?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 142 C.D. BARAJAS 'A': sin categoría
-  C.D. BARAJAS 'B' · SEGUNDA INFANTIL: SEGUNDA INFANTIL  Grupo 21
-/fichaequipo/24025220?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 24025220 C.D. BARAJAS 'C': sin categoría
-/fichaequipo/26741128?temporada=22: 'team' vacío tras 2 intentos
-  Equipo 26741128 C.D. BARAJAS 'D': sin categoría
-  C.D. BARAJAS 'A' · PRIMERA DIVISION AUTONOMICA ALEV.F-7: PRIMERA DIVISION AUTONOMICA ALEVIN F-7 GRUPO 2
-  C.D. BARAJAS 'B' · PRIMERA ALEVIN F-7: PRIMERA ALEVIN F-7 GRUPO 7
-  C.D. BARAJAS 'C' · SEGUNDA ALEVIN F-7: SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS
-  C.D. BARAJAS 'D' · SEGUNDA ALEVIN F-7: SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS
-  C.D. BARAJAS 'E' · SEGUNDA ALEVIN F-7: SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS
-  C.D. BARAJAS 'A' · PRIMERA DIVISION AUTONOMICA BENJAMIN F7: PRIMERA DIVISION AUTONOMICA BENJAMÍN F-7 Grupo 4- COLEGIO ALAMEDA DE OSUNA
-  C.D. BARAJAS 'B' · PRIMERA BENJAMIN F7: PRIMERA BENJAMÍN F-7 Grupo 13- PARACUELLOS (C. RUGBY)
-  C.D. BARAJAS 'C' · PRIMERA BENJAMIN F7: PRIMERA BENJAMÍN F-7 Grupo 13- PARACUELLOS (C. RUGBY)
-  C.D. BARAJAS 'A' · PREBENJAMIN: PREBENJAMIN F7 INICIACION GRUPO 24- VALDEBEBAS
-  C.D. BARAJAS · PRIMERA FEMENINO SENIOR F-7: PRIMERA FEMENINO SENIOR F-7 Grupo 1
-  C.D. BARAJAS · PRIMERA FEMENINO JUVENIL: PRIMERA FEMENINO JUVENIL Grupo 2
-  C.D. BARAJAS · PRIMERA FEMENINO CADETE: PRIMERA FEMENINO CADETE Grupo 3
-  C.D. BARAJAS · PREFERENTE FEMENINO INFANTIL F-7: PREFERENTE FEMENINO INFANTIL F-7 Grupo 4
-  C.D. BARAJAS · PRIMERA FEMENINO ALEVIN F-7: PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS
-Competiciones conocidas: 117
+Modo rápido · semana del 2026-10-26 · ventana 2026-10-25 a 2026-12-06
 Grupos a leer: 13
 PRIMERA CADETE Grupo 6: 30 jornadas, 5 partido(s) nuestros en la ventana
 SEGUNDA INFANTIL  Grupo 21: 26 jornadas, 5 partido(s) nuestros en la ventana
@@ -48,5 +13,5 @@ PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 5 partido(s) nuestros en la venta
 PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 5 partido(s) nuestros en la ventana
 PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 4 partido(s) nuestros en la ventana
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 4 partido(s) nuestros en la ventana
-Actas leídas: 56
-data.json: 112 partidos (55 en casa) · 21/21 grupos leídos
+Actas leídas: 27
+data.json: 111 partidos (54 en casa) · 13/13 grupos leídos
