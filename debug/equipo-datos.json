@@ -1,3 +1,177 @@
 {
- "team": {}
+ "team": {
+  "estado": "1",
+  "sesion_ok": "1",
+  "codigo_equipo": "139",
+  "codigo_club": "1019",
+  "clave_acceso": "1019",
+  "nombre_equipo": "C.D. BARAJAS",
+  "escudo_club": "/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg",
+  "nombre_club": "C.D. BARAJAS",
+  "categoria": "PRIMERA AFICIONADO",
+  "codigo_categoria": "40055",
+  "portal_web": "www.cdbarajas.com",
+  "codigo_campo": "708",
+  "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
+  "foto_campo": "",
+  "campo_entrenamiento": "",
+  "titular_correspondencia": "JOSE M.ª MUÑOZ SEVILLANO",
+  "tratamiento_correspondencia": "",
+  "domicilio_correspondencia": "C/ AYERBE, 16",
+  "localidad_correspondencia": "Madrid",
+  "provincia_correspondencia": "Madrid",
+  "codigo_postal_correspondencia": "28042",
+  "email_correspondencia": "cd.barajas@hotmail.es",
+  "telefonos": "699707552606217604699707552",
+  "jugar_dia": "",
+  "jugar_horario": "",
+  "fax": "913292218",
+  "delegados_equipo": [
+   {
+    "cod_delegado": "16014631",
+    "nombre": "BARGUEÑO EXPOSITO, DANIEL"
+   }
+  ],
+  "auxiliares_equipo": [
+   {
+    "cod_auxiliar": "20579295",
+    "nombre": "HIDALGO DE MORILLO SANZ, JAVIER"
+   }
+  ],
+  "tecnicos_equipo": [
+   {
+    "cod_tecnico": "4758",
+    "nombre": "CANTO DEL POZO, JORGE"
+   },
+   {
+    "cod_tecnico": "10191844",
+    "nombre": "JORGE FERNANDEZ, MIGUEL ANGEL"
+   }
+  ],
+  "jugadores_equipo": [
+   {
+    "cod_jugador": "1068933",
+    "nombre": "AGULLO RUBIO, MIGUEL"
+   },
+   {
+    "cod_jugador": "803058",
+    "nombre": "BERNUZ SORIANO, PABLO"
+   },
+   {
+    "cod_jugador": "13468083",
+    "nombre": "BONJOUR , ALESIO"
+   },
+   {
+    "cod_jugador": "4206374",
+    "nombre": "DEL ARCO JORGE, SAMUEL"
+   },
+   {
+    "cod_jugador": "2372617",
+    "nombre": "DEL OLMO LUCIANO, ALESSANDRO"
+   },
+   {
+    "cod_jugador": "377636",
+    "nombre": "DURANGO LOPEZ, LUIS"
+   },
+   {
+    "cod_jugador": "982000",
+    "nombre": "GARCIA FRANCO, ADRIAN AGUSTIN"
+   },
+   {
+    "cod_jugador": "3136306",
+    "nombre": "GARCIA MARIN, DAVID"
+   },
+   {
+    "cod_jugador": "16615679",
+    "nombre": "GOMEZ VEGA, ENOL"
+   },
+   {
+    "cod_jugador": "3063825",
+    "nombre": "GRANADOS ARGUL, PABLO"
+   },
+   {
+    "cod_jugador": "630945",
+    "nombre": "JIMENEZ RUIZ, GUILLERMO ALEJANDRO"
+   },
+   {
+    "cod_jugador": "1107432",
+    "nombre": "JORGE MONJE, MAURO"
+   },
+   {
+    "cod_jugador": "2425038",
+    "nombre": "JULIAN PUERTA, MARCOS"
+   },
+   {
+    "cod_jugador": "2790241",
+    "nombre": "MATEO MORENO, CARLOS"
+   },
+   {
+    "cod_jugador": "2393081",
+    "nombre": "MORENO DE LA HOZ, ADRIAN"
+   },
+   {
+    "cod_jugador": "4534125",
+    "nombre": "NAVARRO SEVILLANO, AGUSTIN"
+   },
+   {
+    "cod_jugador": "3071080",
+    "nombre": "PEREZ SILVA, MARIO"
+   },
+   {
+    "cod_jugador": "2452860",
+    "nombre": "PORTILLO SORIA, DAVID"
+   },
+   {
+    "cod_jugador": "3125945",
+    "nombre": "RODRIGUEZ GONZALEZ, MANUEL"
+   },
+   {
+    "cod_jugador": "9371710",
+    "nombre": "SAN MARTIN AMAT, PEDRO PABLO"
+   },
+   {
+    "cod_jugador": "6025516",
+    "nombre": "SANCHEZ PRIETO, MIGUEL ANGEL"
+   },
+   {
+    "cod_jugador": "2651870",
+    "nombre": "SANZ CALVO, OSCAR"
+   },
+   {
+    "cod_jugador": "21223628",
+    "nombre": "TEJADA HIGUERAS, DANIEL"
+   },
+   {
+    "cod_jugador": "3069019",
+    "nombre": "VADILLO DIAZ, JORGE"
+   }
+  ],
+  "equipaciones": [
+   {
+    "camiseta": "AMARILLA Y NEGRA RAYAS",
+    "pantalon": "NEGRO",
+    "medias": "AMARILLAS "
+   }
+  ],
+  "equipacion1_diseno": [
+   {
+    "cod_tipo_camiseta": "17",
+    "nombre_camiseta": "Rayas anchas",
+    "clase_css_camiseta": "shirt faf faf-barres3",
+    "color_camiseta1": "#000000",
+    "color_camiseta2": "#FFE151",
+    "cod_tipo_pantalon": "1",
+    "nombre_pantalon": "Base",
+    "clase_css_pantalon": "shirt faf faf-pantalons",
+    "color_pantalon1": "#000000",
+    "color_pantalon2": "#FFFFFF",
+    "cod_tipo_medias": "1",
+    "nombre_medias": "Base",
+    "clase_css_medias": "socks faf faf-mitgetes",
+    "color_medias1": "#FFE151",
+    "color_medias2": "#FFFFFF"
+   }
+  ],
+  "host": "https://appweb.rffm.es/"
+ }
 }
