@@ -23,5 +23,5 @@ PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 4 partido(s) nuestros en 
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 4 partido(s) nuestros en la ventana
 /acta-partido/5661207?temporada=22&competicion=26737768&grupo=26737786: 'game' vacío tras 3 intentos
 Acta https://www.rffm.es/acta-partido/5661207?temporada=22&competicion=26737768&grupo=26737786: acta vacía
-Actas leídas: 62
+Actas leídas: 54
 data.json: 112 partidos (55 en casa) · 21/21 grupos leídos
