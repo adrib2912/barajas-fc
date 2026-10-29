@@ -13,5 +13,5 @@ PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 5 partido(s) nuestros en la venta
 PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 5 partido(s) nuestros en la ventana
 PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 4 partido(s) nuestros en la ventana
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 4 partido(s) nuestros en la ventana
-Actas leídas: 28
+Actas leídas: 27
 data.json: 111 partidos (54 en casa) · 13/13 grupos leídos
