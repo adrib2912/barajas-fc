@@ -7,7 +7,7 @@ PRIMERA CADETE Grupo 6: 30 jornadas, 5 partido(s) nuestros en la ventana
 SEGUNDA CADETE Grupo 19: 26 jornadas, 5 partido(s) nuestros en la ventana
 SEGUNDA CADETE Grupo 18: 26 jornadas, 5 partido(s) nuestros en la ventana
 PREFERENTE INFANTIL Grupo 3: 30 jornadas, 4 partido(s) nuestros en la ventana
-SEGUNDA INFANTIL  Grupo 21: 26 jornadas, 5 partido(s) nuestros en la ventana
+Calendario SEGUNDA INFANTIL : page.waitForFunction: Timeout 45000ms exceeded.
 SEGUNDA INFANTIL  Grupo 19: 26 jornadas, 5 partido(s) nuestros en la ventana
 SEGUNDA INFANTIL  Grupo 18: 26 jornadas, 5 partido(s) nuestros en la ventana
 PRIMERA DIVISION AUTONOMICA ALEVIN F-7 GRUPO 2: 26 jornadas, 5 partido(s) nuestros en la ventana
@@ -19,17 +19,9 @@ PREBENJAMIN F7 INICIACION GRUPO 24- VALDEBEBAS: 11 jornadas, 5 partido(s) nuestr
 PRIMERA FEMENINO SENIOR F-7 Grupo 1: 26 jornadas, 4 partido(s) nuestros en la ventana
 PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 5 partido(s) nuestros en la ventana
 PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 5 partido(s) nuestros en la ventana
-Calendario PREFERENTE FEMENINO INFANTIL F-7: page.waitForFunction: Timeout 45000ms exceeded.
+PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 3 partido(s) nuestros en la ventana
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 5 partido(s) nuestros en la ventana
-/acta-partido/5596041?temporada=22&competicion=26738066&grupo=26738068: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5596041?temporada=22&competicion=26738066&grupo=26738068: acta vacía
-/acta-partido/5703401?temporada=22&competicion=26737890&grupo=26737893: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5703401?temporada=22&competicion=26737890&grupo=26737893: acta vacía
-/acta-partido/5582543?temporada=22&competicion=26737718&grupo=26737721: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5582543?temporada=22&competicion=26737718&grupo=26737721: acta vacía
-/acta-partido/5653218?temporada=22&competicion=26737768&grupo=26737787: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5653218?temporada=22&competicion=26737768&grupo=26737787: acta vacía
-/acta-partido/5703406?temporada=22&competicion=26737890&grupo=26737893: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5703406?temporada=22&competicion=26737890&grupo=26737893: acta vacía
-Actas leídas: 47
+/acta-partido/5703412?temporada=22&competicion=26737890&grupo=26737893: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5703412?temporada=22&competicion=26737890&grupo=26737893: acta vacía
+Actas leídas: 48
 data.json: 118 partidos (59 en casa) · 20/21 grupos leídos
