@@ -1,9 +1,9 @@
 Modo rápido · semana del 2026-11-02 · ventana 2026-11-01 a 2026-12-13
 Grupos a leer: 21
-PRIMERA AFICIONADO Grupo 4: 34 jornadas, 6 partido(s) nuestros en la ventana
-PREFERENTE JUVENIL Grupo 3: 34 jornadas, 6 partido(s) nuestros en la ventana
-PRIMERA JUVENIL Grupo 7: 34 jornadas, 6 partido(s) nuestros en la ventana
-PRIMERA CADETE Grupo 6: 30 jornadas, 5 partido(s) nuestros en la ventana
+Calendario PRIMERA AFICIONADO: page.waitForFunction: Timeout 45000ms exceeded.
+Calendario PREFERENTE JUVENIL: page.waitForFunction: Timeout 45000ms exceeded.
+Calendario PRIMERA JUVENIL: page.waitForFunction: Timeout 45000ms exceeded.
+Calendario PRIMERA CADETE: page.waitForFunction: Timeout 45000ms exceeded.
 SEGUNDA CADETE Grupo 19: 26 jornadas, 5 partido(s) nuestros en la ventana
 SEGUNDA CADETE Grupo 18: 26 jornadas, 5 partido(s) nuestros en la ventana
 PREFERENTE INFANTIL Grupo 3: 30 jornadas, 4 partido(s) nuestros en la ventana
@@ -21,5 +21,5 @@ PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 5 partido(s) nuestros en la venta
 PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 5 partido(s) nuestros en la ventana
 PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 3 partido(s) nuestros en la ventana
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 5 partido(s) nuestros en la ventana
-Actas leídas: 53
-data.json: 118 partidos (59 en casa) · 21/21 grupos leídos
+Actas leídas: 41
+data.json: 117 partidos (59 en casa) · 17/21 grupos leídos
