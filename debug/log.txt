@@ -25,5 +25,7 @@ PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jorn
 Acta https://www.rffm.es/acta-partido/5582534?temporada=22&competicion=26737718&grupo=26737721: acta vacía
 /acta-partido/5613350?temporada=22&competicion=26737724&grupo=26737731: 'game' vacío tras 3 intentos
 Acta https://www.rffm.es/acta-partido/5613350?temporada=22&competicion=26737724&grupo=26737731: acta vacía
-Actas leídas: 53
+/acta-partido/5661222?temporada=22&competicion=26737768&grupo=26737786: 'game' vacío tras 3 intentos
+Acta https://www.rffm.es/acta-partido/5661222?temporada=22&competicion=26737768&grupo=26737786: acta vacía
+Actas leídas: 52
 data.json: 119 partidos (60 en casa) · 21/21 grupos leídos
