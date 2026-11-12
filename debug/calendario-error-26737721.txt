@@ -1,4 +1,4 @@
 https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737718&grupo=26737721
 
-504 Gateway Time-out
+502 Bad Gateway
 nginx/1.18.0 (Ubuntu)
