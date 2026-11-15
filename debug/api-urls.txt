@@ -1,5 +1,5 @@
-https://www.rffm.es/api/game-types?
 https://www.rffm.es/api/seasons?
+https://www.rffm.es/api/game-types?
 https://www.rffm.es/api/competitions?temporada=22&tipojuego=1
 https://www.rffm.es/api/game-types
 https://www.rffm.es/api/competitions?temporada=22&tipojuego=2
