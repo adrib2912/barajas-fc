@@ -1,22 +1,22 @@
 Modo rápido · semana del 2026-11-16 · ventana 2026-11-15 a 2026-12-27
 Grupos a leer: 18
-Calendario PREFERENTE JUVENIL: page.goto: net::ERR_TIMED_OUT at https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737718&grupo=26737721
-Calendario PRIMERA CADETE: page.goto: net::ERR_TIMED_OUT at https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737751&grupo=26737758
-Calendario SEGUNDA CADETE: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737768&grupo=26737786" is interrupted by another navigation to "chrome-error://chromewebdata/"
-Calendario PREFERENTE INFANTIL: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737819&grupo=26737822" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737768&grupo=26737786"
-Calendario SEGUNDA INFANTIL : page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738345" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737819&grupo=26737822"
-Calendario SEGUNDA INFANTIL : page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738343" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738345"
-Calendario SEGUNDA INFANTIL : page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738342" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738343"
-Calendario PRIMERA DIVISION AUTONOMICA ALEVIN F-7: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738066&grupo=26738068" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738342"
-Calendario PRIMERA ALEVIN F-7: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738141&grupo=26738156" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738066&grupo=26738068"
-Calendario SEGUNDA ALEVIN F-7: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738071&grupo=26738074" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738141&grupo=26738156"
-Calendario PRIMERA DIVISION AUTONOMICA BENJAMÍN F-7: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738158&grupo=26738163" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738071&grupo=26738074"
-Calendario PRIMERA BENJAMÍN F-7: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26737943&grupo=26738011" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26738158&grupo=26738163"
-Calendario PREBENJAMIN F7 INICIACION: page.goto: Navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26797573&grupo=28150806" is interrupted by another navigation to "https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=2&competicion=26737943&grupo=26738011"
-Calendario PRIMERA FEMENINO SENIOR F-7: page.waitForFunction: Timeout 45000ms exceeded.
-Calendario PRIMERA FEMENINO JUVENIL: page.waitForFunction: Timeout 45000ms exceeded.
-Calendario PRIMERA FEMENINO CADETE: page.waitForFunction: Timeout 45000ms exceeded.
-Calendario PREFERENTE FEMENINO INFANTIL F-7: page.waitForFunction: Timeout 45000ms exceeded.
-Calendario PRIMERA FEMENINO ALEVIN F-7: page.waitForFunction: Timeout 45000ms exceeded.
-Actas leídas: 0
-Solo se han leído 0 de 18 grupos; no toco data.json.
+PREFERENTE JUVENIL Grupo 3: 34 jornadas, 5 partido(s) nuestros en la ventana
+PRIMERA CADETE Grupo 6: 30 jornadas, 4 partido(s) nuestros en la ventana
+SEGUNDA CADETE Grupo 18: 26 jornadas, 4 partido(s) nuestros en la ventana
+PREFERENTE INFANTIL Grupo 3: 30 jornadas, 3 partido(s) nuestros en la ventana
+SEGUNDA INFANTIL  Grupo 21: 26 jornadas, 4 partido(s) nuestros en la ventana
+SEGUNDA INFANTIL  Grupo 19: 26 jornadas, 4 partido(s) nuestros en la ventana
+SEGUNDA INFANTIL  Grupo 18: 26 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA DIVISION AUTONOMICA ALEVIN F-7 GRUPO 2: 26 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA ALEVIN F-7 GRUPO 7: 26 jornadas, 4 partido(s) nuestros en la ventana
+SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS: 11 jornadas, 12 partido(s) nuestros en la ventana
+PRIMERA DIVISION AUTONOMICA BENJAMÍN F-7 Grupo 4- COLEGIO ALAMEDA DE OSUNA: 13 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA BENJAMÍN F-7 Grupo 13- PARACUELLOS (C. RUGBY): 11 jornadas, 8 partido(s) nuestros en la ventana
+PREBENJAMIN F7 INICIACION GRUPO 24- VALDEBEBAS: 11 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA FEMENINO SENIOR F-7 Grupo 1: 26 jornadas, 3 partido(s) nuestros en la ventana
+PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 4 partido(s) nuestros en la ventana
+PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 4 partido(s) nuestros en la ventana
+PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 2 partido(s) nuestros en la ventana
+PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 4 partido(s) nuestros en la ventana
+Actas leídas: 31
+data.json: 94 partidos (47 en casa) · 18/18 grupos leídos
