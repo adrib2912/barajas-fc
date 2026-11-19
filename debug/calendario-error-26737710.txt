@@ -1,4 +1,2 @@
 https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26737706&grupo=26737710
 
-504 Gateway Time-out
-nginx/1.18.0 (Ubuntu)
