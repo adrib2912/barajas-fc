@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-22T22:48:47.517Z",
- "lunes": "2026-11-16",
+ "actualizado": "2026-11-22T23:03:43.106Z",
+ "lunes": "2026-11-23",
  "equipos": [
   {
    "cod": "139",
@@ -320,78 +320,6 @@
  "leidos": 21,
  "partidos": [
   {
-   "id": "https://www.rffm.es/acta-partido/5582543?temporada=22&competicion=26737718&grupo=26737721",
-   "gk": "26737718-26737721",
-   "cat": "Juvenil",
-   "fem": false,
-   "f7": false,
-   "comp": "PREFERENTE JUVENIL",
-   "grupo": "Grupo 3",
-   "equipo": "C.D. BARAJAS 'A'",
-   "rival": "C.F. FUENTE EL SAZ 'A'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012132698_escudo.png?nova=1",
-   "local": true,
-   "jornada": 10,
-   "fJornada": "2026-11-15",
-   "fecha": "2026-11-14",
-   "hora": "16:15",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": true,
-   "res": [
-    3,
-    1
-   ]
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5613360?temporada=22&competicion=26737724&grupo=26737731",
-   "gk": "26737724-26737731",
-   "cat": "Juvenil",
-   "fem": false,
-   "f7": false,
-   "comp": "PRIMERA JUVENIL",
-   "grupo": "Grupo 7",
-   "equipo": "C.D. BARAJAS 'B'",
-   "rival": "C.D. NUEVO BOADILLA 'H'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014265980_nuevo_boadilla.png",
-   "local": false,
-   "jornada": 10,
-   "fJornada": "2026-11-15",
-   "fecha": "2026-11-14",
-   "hora": "18:30",
-   "campo": "BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA)",
-   "oficial": true,
-   "jugado": true,
-   "res": [
-    1,
-    3
-   ]
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5587366?temporada=22&competicion=26737706&grupo=26737710",
-   "gk": "26737706-26737710",
-   "cat": "Aficionado",
-   "fem": false,
-   "f7": false,
-   "comp": "PRIMERA AFICIONADO",
-   "grupo": "Grupo 4",
-   "equipo": "C.D. BARAJAS",
-   "rival": "ALAMEDA DE OSUNA ESCUELAS DE FUTBOL",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011035718_00100_1000035118_escudo_bueno_alameda.jpg?nova=1",
-   "local": false,
-   "jornada": 10,
-   "fJornada": "2026-11-15",
-   "fecha": "2026-11-15",
-   "hora": "11:15",
-   "campo": "MUNICIPAL ALAMEDA DE OSUNA (HA)",
-   "oficial": true,
-   "jugado": true,
-   "res": [
-    0,
-    0
-   ]
-  },
-  {
    "id": "https://www.rffm.es/acta-partido/5582551?temporada=22&competicion=26737718&grupo=26737721",
    "gk": "26737718-26737721",
    "cat": "Juvenil",
@@ -416,322 +344,6 @@
    ]
   },
   {
-   "id": "https://www.rffm.es/acta-partido/5716207?temporada=22&competicion=26797573&grupo=28150806",
-   "gk": "26797573-28150806",
-   "cat": "Prebenjamín",
-   "fem": false,
-   "f7": true,
-   "comp": "PREBENJAMIN F7 INICIACION",
-   "grupo": "GRUPO 24- VALDEBEBAS",
-   "equipo": "C.D. BARAJAS 'A'",
-   "rival": "GREDOS SAN DIEGO VALDEBEBAS 'L'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012174389_gsd_deportes_color_v.png?nova=1",
-   "local": false,
-   "jornada": 5,
-   "fJornada": "2026-11-20",
-   "fecha": "2026-11-20",
-   "hora": "19:15",
-   "campo": "CIUDAD REAL MADRID 8 (HA)",
-   "oficial": true,
-   "jugado": true,
-   "res": [
-    1,
-    0
-   ]
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5701941?temporada=22&competicion=26738071&grupo=26738074",
-   "gk": "26738071-26738074",
-   "cat": "Alevín",
-   "fem": false,
-   "f7": true,
-   "comp": "SEGUNDA ALEVIN F-7",
-   "grupo": "GRUPO 16- BARAJAS",
-   "equipo": "C.D. BARAJAS 'D'",
-   "rival": "C.D.B. BASE 'B'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011897207_CD_Base.png?nova=1",
-   "local": true,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "09:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5604603?temporada=22&competicion=26738158&grupo=26738163",
-   "gk": "26738158-26738163",
-   "cat": "Benjamín",
-   "fem": false,
-   "f7": true,
-   "comp": "PRIMERA DIVISION AUTONOMICA BENJAMÍN F-7",
-   "grupo": "Grupo 4- COLEGIO ALAMEDA DE OSUNA",
-   "equipo": "C.D. BARAJAS 'A'",
-   "rival": "CLUB SAN AGUSTIN 'A'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014257813_san_agustin.png",
-   "local": true,
-   "jornada": 6,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "09:00",
-   "campo": "COLEGIO ALAMEDA DE OSUNA (HA)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5703406?temporada=22&competicion=26737890&grupo=26737893",
-   "gk": "26737890-26737893",
-   "cat": "Cadete",
-   "fem": true,
-   "f7": false,
-   "comp": "PRIMERA FEMENINO CADETE",
-   "grupo": "Grupo 3",
-   "equipo": "C.D. BARAJAS",
-   "rival": "C.D. ESCOLAPIOS ALCALA",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011615454_logo2.png?nova=1",
-   "local": false,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "09:30",
-   "campo": "ALCALA - COLEGIO ESCUELAS PÍAS (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5690238?temporada=22&competicion=26738071&grupo=26738074",
-   "gk": "26738071-26738074",
-   "cat": "Alevín",
-   "fem": false,
-   "f7": true,
-   "comp": "SEGUNDA ALEVIN F-7",
-   "grupo": "GRUPO 16- BARAJAS",
-   "equipo": "C.D. BARAJAS 'C'",
-   "rival": "C.D. CHAMBERI DE MADRID 'B'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267176_CHAMBERI.png",
-   "local": true,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "10:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5668329?temporada=22&competicion=26738324&grupo=26738345",
-   "gk": "26738324-26738345",
-   "cat": "Infantil",
-   "fem": false,
-   "f7": false,
-   "comp": "SEGUNDA INFANTIL ",
-   "grupo": "Grupo 21",
-   "equipo": "C.D. BARAJAS 'B'",
-   "rival": "A.D. OÑA SANCHINARRO 'D'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011068128_LogoO_av.1.png?nova=1",
-   "local": false,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "10:30",
-   "campo": "OÑA - SANCHINARRO (HA)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5690236?temporada=22&competicion=26738071&grupo=26738074",
-   "gk": "26738071-26738074",
-   "cat": "Alevín",
-   "fem": false,
-   "f7": true,
-   "comp": "SEGUNDA ALEVIN F-7",
-   "grupo": "GRUPO 16- BARAJAS",
-   "equipo": "C.D. BARAJAS 'E'",
-   "rival": "C.D.E. FEC 'B'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011559088_Escudo_rfm.jpg?nova=1",
-   "local": true,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "11:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5596048?temporada=22&competicion=26738066&grupo=26738068",
-   "gk": "26738066-26738068",
-   "cat": "Alevín",
-   "fem": false,
-   "f7": true,
-   "comp": "PRIMERA DIVISION AUTONOMICA ALEVIN F-7",
-   "grupo": "GRUPO 2",
-   "equipo": "C.D. BARAJAS 'A'",
-   "rival": "CLUB ATLETICO DE MADRID S.A.D. 'B'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011717577_Captura_de_pantalla_2024_06_18_085624.png?nova=1",
-   "local": true,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "12:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5649717?temporada=22&competicion=26738324&grupo=26738342",
-   "gk": "26738324-26738342",
-   "cat": "Infantil",
-   "fem": false,
-   "f7": false,
-   "comp": "SEGUNDA INFANTIL ",
-   "grupo": "Grupo 18",
-   "equipo": "C.D. BARAJAS 'D'",
-   "rival": "C.D. CANILLEJAS C.F. 'A'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014183043_4979CanillejasCF.png",
-   "local": false,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "12:40",
-   "campo": "COLEGIO EL SOL (HA)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5605932?temporada=22&competicion=26737819&grupo=26737822",
-   "gk": "26737819-26737822",
-   "cat": "Infantil",
-   "fem": false,
-   "f7": false,
-   "comp": "PREFERENTE INFANTIL",
-   "grupo": "Grupo 3",
-   "equipo": "C.D. BARAJAS 'A'",
-   "rival": "C.D. SAN ROQUE E.F.F. 'A'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114778_325CEB7E_6B15_4AEF_B6B5_C818521FA4A3.jpeg?nova=1",
-   "local": true,
-   "jornada": 9,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "13:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5727357?temporada=22&competicion=26738057&grupo=26738060",
-   "gk": "26738057-26738060",
-   "cat": "Alevín",
-   "fem": true,
-   "f7": true,
-   "comp": "PRIMERA FEMENINO ALEVIN F-7",
-   "grupo": "Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS",
-   "equipo": "C.D. BARAJAS",
-   "rival": "C.F. VALDEBEBAS 'A'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010954009_escudo_pequeno_valdebebas.jpg?nova=1",
-   "local": false,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "14:00",
-   "campo": "ALCOBENDAS - LICEO EUROPEO (HA)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5678085?temporada=22&competicion=26737943&grupo=26738011",
-   "gk": "26737943-26738011",
-   "cat": "Benjamín",
-   "fem": false,
-   "f7": true,
-   "comp": "PRIMERA BENJAMÍN F-7",
-   "grupo": "Grupo 13- PARACUELLOS (C. RUGBY)",
-   "equipo": "C.D. BARAJAS 'C'",
-   "rival": "ALAMEDA DE OSUNA ESCUELAS DE FUTBOL 'C'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011035718_00100_1000035118_escudo_bueno_alameda.jpg?nova=1",
-   "local": false,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "14:30",
-   "campo": "PARACUELLOS (CIUDAD DEL RUGBY)",
-   "oficial": true,
-   "jugado": false,
-   "cambios": [
-    {
-     "antes": "2026-11-21 11:00",
-     "ahora": "2026-11-21 14:30"
-    }
-   ]
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5678089?temporada=22&competicion=26737943&grupo=26738011",
-   "gk": "26737943-26738011",
-   "cat": "Benjamín",
-   "fem": false,
-   "f7": true,
-   "comp": "PRIMERA BENJAMÍN F-7",
-   "grupo": "Grupo 13- PARACUELLOS (C. RUGBY)",
-   "equipo": "C.D. BARAJAS 'B'",
-   "rival": "AULA C.F. - BREZO OSUNA 'C'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011716185_AulaCF_6Mayo.png?nova=1",
-   "local": true,
-   "jornada": 5,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "14:30",
-   "campo": "PARACUELLOS (CIUDAD DEL RUGBY)",
-   "oficial": true,
-   "jugado": false,
-   "cambios": [
-    {
-     "antes": "2026-11-21 11:00",
-     "ahora": "2026-11-21 14:30"
-    }
-   ]
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5653218?temporada=22&competicion=26737768&grupo=26737787",
-   "gk": "26737768-26737787",
-   "cat": "Cadete",
-   "fem": false,
-   "f7": false,
-   "comp": "SEGUNDA CADETE",
-   "grupo": "Grupo 19",
-   "equipo": "C.D. BARAJAS 'B'",
-   "rival": "C.D. SAN ROQUE E.F.F. 'B'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114778_325CEB7E_6B15_4AEF_B6B5_C818521FA4A3.jpeg?nova=1",
-   "local": false,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "14:45",
-   "campo": "SAN ROQUE (HA)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5665157?temporada=22&competicion=26738324&grupo=26738343",
-   "gk": "26738324-26738343",
-   "cat": "Infantil",
-   "fem": false,
-   "f7": false,
-   "comp": "SEGUNDA INFANTIL ",
-   "grupo": "Grupo 19",
-   "equipo": "C.D. BARAJAS 'C'",
-   "rival": "C.F. VALDEBEBAS 'D'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010954009_escudo_pequeno_valdebebas.jpg?nova=1",
-   "local": true,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "15:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
    "id": "https://www.rffm.es/acta-partido/5613369?temporada=22&competicion=26737724&grupo=26737731",
    "gk": "26737724-26737731",
    "cat": "Juvenil",
@@ -752,46 +364,6 @@
    "jugado": false
   },
   {
-   "id": "https://www.rffm.es/acta-partido/5661222?temporada=22&competicion=26737768&grupo=26737786",
-   "gk": "26737768-26737786",
-   "cat": "Cadete",
-   "fem": false,
-   "f7": false,
-   "comp": "SEGUNDA CADETE",
-   "grupo": "Grupo 18",
-   "equipo": "C.D. BARAJAS 'C'",
-   "rival": "ESC. FUT. EL OLIVO DE COSLADA 'E'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011108074_olivo.jpg?nova=1",
-   "local": true,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-21",
-   "hora": "16:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5618321?temporada=22&competicion=26738141&grupo=26738156",
-   "gk": "26738141-26738156",
-   "cat": "Alevín",
-   "fem": false,
-   "f7": true,
-   "comp": "PRIMERA ALEVIN F-7",
-   "grupo": "GRUPO 7",
-   "equipo": "C.D. BARAJAS 'B'",
-   "rival": "S.A.D. FUNDACION ESCUELA DE FUTBOL AFE 'B'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011230707_unnamed.jpg?nova=1",
-   "local": true,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-22",
-   "hora": "10:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
    "id": "https://www.rffm.es/acta-partido/5587375?temporada=22&competicion=26737706&grupo=26737710",
    "gk": "26737706-26737710",
    "cat": "Aficionado",
@@ -808,66 +380,6 @@
    "fecha": "2026-11-22",
    "hora": "12:00",
    "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5602189?temporada=22&competicion=26737751&grupo=26737758",
-   "gk": "26737751-26737758",
-   "cat": "Cadete",
-   "fem": false,
-   "f7": false,
-   "comp": "PRIMERA CADETE",
-   "grupo": "Grupo 6",
-   "equipo": "C.D. BARAJAS 'A'",
-   "rival": "A.D. COMPLUTENSE ALCALA 'D'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000080565_Escudo.jpg?nova=1",
-   "local": true,
-   "jornada": 9,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-22",
-   "hora": "14:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5681596?temporada=22&competicion=26737881&grupo=26737883",
-   "gk": "26737881-26737883",
-   "cat": "Juvenil",
-   "fem": true,
-   "f7": false,
-   "comp": "PRIMERA FEMENINO JUVENIL",
-   "grupo": "Grupo 2",
-   "equipo": "C.D. BARAJAS",
-   "rival": "FUTBOLELLAS CFF - TORREJON 'C'",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014298231_FUTBOL_ELLAS.png",
-   "local": true,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-22",
-   "hora": "16:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "oficial": true,
-   "jugado": false
-  },
-  {
-   "id": "https://www.rffm.es/acta-partido/5731115?temporada=22&competicion=26738230&grupo=26738231",
-   "gk": "26738230-26738231",
-   "cat": "Senior",
-   "fem": true,
-   "f7": true,
-   "comp": "PRIMERA FEMENINO SENIOR F-7",
-   "grupo": "Grupo 1",
-   "equipo": "C.D. BARAJAS",
-   "rival": "CDB FUTBOL FEMENINO OLYMPIA LAS ROZAS",
-   "escRival": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267319_olympia.png",
-   "local": false,
-   "jornada": 7,
-   "fJornada": "2026-11-21",
-   "fecha": "2026-11-22",
-   "hora": "20:30",
-   "campo": "LAS ROZAS - RECINTO FERIAL (HA)",
    "oficial": true,
    "jugado": false
   },
@@ -2253,86 +1765,6 @@
   }
  ],
  "actas": {
-  "https://www.rffm.es/acta-partido/5697451?temporada=22&competicion=26738230&grupo=26738231": {
-   "fecha": "2026-11-08",
-   "hora": "16:30",
-   "campo": "ALCALA - COLEGIO SAN GABRIEL (HA)",
-   "casa": "S.A.D. COLEGIO SAN GABRIEL",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267598_san_gabriel.png",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "of": true,
-   "t": 1794173232198
-  },
-  "https://www.rffm.es/acta-partido/5602172?temporada=22&competicion=26737751&grupo=26737758": {
-   "fecha": "2026-11-08",
-   "hora": "14:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "casa": "C.D. BARAJAS 'A'",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011775440_Escudo_Villalbilla_nuevo_vectorized.png?nova=1",
-   "of": true,
-   "t": 1794175534808
-  },
-  "https://www.rffm.es/acta-partido/5661207?temporada=22&competicion=26737768&grupo=26737786": {
-   "fecha": "2026-11-08",
-   "hora": "17:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "casa": "C.D. BARAJAS 'C'",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011061065_Escudo_Meco__Nuevo_jpg.jpg?nova=1",
-   "of": true,
-   "t": 1794173218025
-  },
-  "https://www.rffm.es/acta-partido/5668316?temporada=22&competicion=26738324&grupo=26738345": {
-   "fecha": "2026-11-08",
-   "hora": "15:30",
-   "campo": "SPARTAC MANOTERAS (HA)",
-   "casa": "C.D. SPARTAC DE MANOTERAS 'C'",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000094027_ESCUDO.jpg?nova=1",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "of": true,
-   "t": 1794174496439
-  },
-  "https://www.rffm.es/acta-partido/5649704?temporada=22&competicion=26738324&grupo=26738342": {
-   "fecha": "2026-11-08",
-   "hora": "15:00",
-   "campo": "PARACUELLOS - PVO. MUNICIPAL (HA)",
-   "casa": "C.D. PARACUELLOS SPORT 'C'",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266096_PARACUELLOS_SPORT.png",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "of": true,
-   "t": 1794170878814
-  },
-  "https://www.rffm.es/acta-partido/5587356?temporada=22&competicion=26737706&grupo=26737710": {
-   "fecha": "2026-11-08",
-   "hora": "12:00",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "casa": "C.D. BARAJAS",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png?nova=1",
-   "of": true,
-   "t": 1794779064776
-  },
-  "https://www.rffm.es/acta-partido/5582534?temporada=22&competicion=26737718&grupo=26737721": {
-   "fecha": "2026-11-08",
-   "hora": "13:30",
-   "campo": "CAMPO NUEVO VILLA ROSA (HA)",
-   "casa": "A.D. VILLA ROSA 'A'",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010956278_Escudo_Nuevo_-_copia.jpg?nova=1",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "of": true,
-   "t": 1794782142721
-  },
-  "https://www.rffm.es/acta-partido/5596033?temporada=22&competicion=26738066&grupo=26738068": {
-   "fecha": "2026-11-08",
-   "hora": "09:30",
-   "campo": "NTRA. SRA. DE LA SOLEDAD (H.A.)",
-   "casa": "C.D. BARAJAS 'A'",
-   "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
-   "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg?nova=1",
-   "of": true,
-   "t": 1794173223353
-  },
   "https://www.rffm.es/acta-partido/5716202?temporada=22&competicion=26797573&grupo=28150806": {
    "fecha": "2026-11-13",
    "hora": "18:30",
@@ -3015,7 +2447,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011075319_ESCUDO_SPM.png?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387716483
+   "t": 1795388559787
   },
   "https://www.rffm.es/acta-partido/5727363?temporada=22&competicion=26738057&grupo=26738060": {
    "fecha": "2026-11-28",
@@ -3075,7 +2507,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258349_CLUB_CIUDAD_HENARES.png",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387716711
+   "t": 1795388560905
   },
   "https://www.rffm.es/acta-partido/5653231?temporada=22&competicion=26737768&grupo=26737787": {
    "fecha": "2026-12-12",
@@ -3095,7 +2527,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014276356_la_plata.png",
    "of": false,
-   "t": 1795387717585
+   "t": 1795388563984
   },
   "https://www.rffm.es/acta-partido/5605948?temporada=22&competicion=26737819&grupo=26737822": {
    "fecha": "2026-12-12",
@@ -3105,7 +2537,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012141601_Escudo_Cobe_a_fondo_blanco.png?nova=1",
    "of": false,
-   "t": 1795387718313
+   "t": 1795388565436
   },
   "https://www.rffm.es/acta-partido/5668342?temporada=22&competicion=26738324&grupo=26738345": {
    "fecha": "2026-12-12",
@@ -3115,7 +2547,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258300_escudo_e.f._siete_picos_colmenar.png",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387719014
+   "t": 1795388568021
   },
   "https://www.rffm.es/acta-partido/5665172?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-12-12",
@@ -3125,7 +2557,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011035718_00100_1000035118_escudo_bueno_alameda.jpg?nova=1",
    "of": false,
-   "t": 1795387719547
+   "t": 1795388568966
   },
   "https://www.rffm.es/acta-partido/5649730?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-12-12",
@@ -3135,7 +2567,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114778_325CEB7E_6B15_4AEF_B6B5_C818521FA4A3.jpeg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387720156
+   "t": 1795388569538
   },
   "https://www.rffm.es/acta-partido/5596063?temporada=22&competicion=26738066&grupo=26738068": {
    "fecha": "2026-12-12",
@@ -3145,7 +2577,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000094647_53030_logo_cd_canillas.jpg?nova=1",
    "of": false,
-   "t": 1795387720438
+   "t": 1795388570028
   },
   "https://www.rffm.es/acta-partido/5618336?temporada=22&competicion=26738141&grupo=26738156": {
    "fecha": "2026-12-12",
@@ -3155,7 +2587,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010954009_escudo_pequeno_valdebebas.jpg?nova=1",
    "of": false,
-   "t": 1795387720710
+   "t": 1795388570657
   },
   "https://www.rffm.es/acta-partido/5690249?temporada=22&competicion=26738071&grupo=26738074": {
    "fecha": "2026-12-12",
@@ -3225,7 +2657,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000055987_Escudo_UD3C_2012.jpg?nova=1",
    "of": false,
-   "t": 1795387721133
+   "t": 1795388571390
   },
   "https://www.rffm.es/acta-partido/5703417?temporada=22&competicion=26737890&grupo=26737893": {
    "fecha": "2026-12-12",
@@ -3235,7 +2667,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012153463_ESCUDO_ADA_TOLEDO__2_.jpg",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387721617
+   "t": 1795388572002
   },
   "https://www.rffm.es/acta-partido/5727368?temporada=22&competicion=26738057&grupo=26738060": {
    "fecha": "2026-12-12",
@@ -3265,7 +2697,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000001111_3284_AD_Juventud_de_Torrejon.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387722833
+   "t": 1795388594303
   },
   "https://www.rffm.es/acta-partido/5613386?temporada=22&competicion=26737724&grupo=26737731": {
    "fecha": "2026-12-13",
@@ -3275,7 +2707,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012126114_escudo.jpeg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387723062
+   "t": 1795388594764
   },
   "https://www.rffm.es/acta-partido/5716224?temporada=22&competicion=26797573&grupo=28150806": {
    "fecha": "2026-12-18",
@@ -3295,7 +2727,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014257882_henares.jpg",
    "of": false,
-   "t": 1795387723589
+   "t": 1795388596814
   },
   "https://www.rffm.es/acta-partido/5653238?temporada=22&competicion=26737768&grupo=26737787": {
    "fecha": "2026-12-19",
@@ -3305,7 +2737,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png?nova=1",
    "of": false,
-   "t": 1795387724356
+   "t": 1795388597104
   },
   "https://www.rffm.es/acta-partido/5605949?temporada=22&competicion=26737819&grupo=26737822": {
    "fecha": "2026-12-19",
@@ -3325,7 +2757,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114778_325CEB7E_6B15_4AEF_B6B5_C818521FA4A3.jpeg?nova=1",
    "of": false,
-   "t": 1795387724867
+   "t": 1795388598771
   },
   "https://www.rffm.es/acta-partido/5665180?temporada=22&competicion=26738324&grupo=26738343": {
    "fecha": "2026-12-19",
@@ -3335,7 +2767,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000035077_BuenConsejo.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387725158
+   "t": 1795388599595
   },
   "https://www.rffm.es/acta-partido/5649737?temporada=22&competicion=26738324&grupo=26738342": {
    "fecha": "2026-12-19",
@@ -3345,7 +2777,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011683308_club_alameda.jpg?nova=1",
    "of": false,
-   "t": 1795387725567
+   "t": 1795388600197
   },
   "https://www.rffm.es/acta-partido/5690256?temporada=22&competicion=26738071&grupo=26738074": {
    "fecha": "2026-12-19",
@@ -3405,7 +2837,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010962467_ESCUDO.png?nova=1",
    "of": false,
-   "t": 1795387726145
+   "t": 1795388602778
   },
   "https://www.rffm.es/acta-partido/5681619?temporada=22&competicion=26737881&grupo=26737883": {
    "fecha": "2026-12-19",
@@ -3425,7 +2857,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000049097_ESCUDO%20atletico%20la%20garena.jpg?nova=1",
    "of": false,
-   "t": 1795387726684
+   "t": 1795388620321
   },
   "https://www.rffm.es/acta-partido/5725484?temporada=22&competicion=26737899&grupo=26750861": {
    "fecha": "2026-12-19",
@@ -3455,7 +2887,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014257882_henares.jpg",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387726909
+   "t": 1795388621154
   },
   "https://www.rffm.es/acta-partido/5613395?temporada=22&competicion=26737724&grupo=26737731": {
    "fecha": "2026-12-20",
@@ -3465,7 +2897,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266096_PARACUELLOS_SPORT.png",
    "of": false,
-   "t": 1795387727512
+   "t": 1795388623104
   },
   "https://www.rffm.es/acta-partido/5661245?temporada=22&competicion=26737768&grupo=26737786": {
    "fecha": "2026-12-19",
@@ -3475,7 +2907,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000001111_3284_AD_Juventud_de_Torrejon.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387724640
+   "t": 1795388597880
   },
   "https://www.rffm.es/acta-partido/5596071?temporada=22&competicion=26738066&grupo=26738068": {
    "fecha": "2026-12-19",
@@ -3485,7 +2917,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187001_1016_C.D._San_Fernando_2026_2027_Federacion.png",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "of": false,
-   "t": 1795387725907
+   "t": 1795388601749
   },
   "https://www.rffm.es/acta-partido/5618344?temporada=22&competicion=26738141&grupo=26738156": {
    "fecha": "2026-12-19",
@@ -3515,7 +2947,7 @@
    "escL": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000042740_ESCUDO%20BARAJAS.jpg?nova=1",
    "escV": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014257882_henares.jpg",
    "of": false,
-   "t": 1795387727243
+   "t": 1795388622201
   }
  }
 }
