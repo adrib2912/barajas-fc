@@ -1,0 +1,4 @@
+https://www.rffm.es/competicion/calendario?temporada=22&tipojuego=1&competicion=26738324&grupo=26738342
+
+502 Bad Gateway
+nginx/1.18.0 (Ubuntu)

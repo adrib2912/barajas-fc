@@ -2,7 +2,7 @@ Modo rápido · semana del 2026-11-23 · ventana 2026-11-22 a 2027-01-03
 Grupos a leer: 14
 SEGUNDA INFANTIL  Grupo 21: 26 jornadas, 3 partido(s) nuestros en la ventana
 SEGUNDA INFANTIL  Grupo 19: 26 jornadas, 3 partido(s) nuestros en la ventana
-SEGUNDA INFANTIL  Grupo 18: 26 jornadas, 3 partido(s) nuestros en la ventana
+Calendario SEGUNDA INFANTIL : page.waitForFunction: Timeout 45000ms exceeded.
 PRIMERA DIVISION AUTONOMICA ALEVIN F-7 GRUPO 2: 26 jornadas, 3 partido(s) nuestros en la ventana
 PRIMERA ALEVIN F-7 GRUPO 7: 26 jornadas, 3 partido(s) nuestros en la ventana
 SEGUNDA ALEVIN F-7 GRUPO 16- BARAJAS: 11 jornadas, 9 partido(s) nuestros en la ventana
@@ -14,7 +14,5 @@ PRIMERA FEMENINO JUVENIL Grupo 2: 26 jornadas, 3 partido(s) nuestros en la venta
 PRIMERA FEMENINO CADETE Grupo 3: 22 jornadas, 3 partido(s) nuestros en la ventana
 PREFERENTE FEMENINO INFANTIL F-7 Grupo 4: 13 jornadas, 2 partido(s) nuestros en la ventana
 PRIMERA FEMENINO ALEVIN F-7 Grupo 3 - LICEO EUROPEO - SPARTAC MANOTERAS: 11 jornadas, 3 partido(s) nuestros en la ventana
-/acta-partido/5596063?temporada=22&competicion=26738066&grupo=26738068: 'game' vacío tras 3 intentos
-Acta https://www.rffm.es/acta-partido/5596063?temporada=22&competicion=26738066&grupo=26738068: acta vacía
-Actas leídas: 14
-data.json: 70 partidos (34 en casa) · 14/14 grupos leídos
+Actas leídas: 12
+data.json: 70 partidos (34 en casa) · 13/14 grupos leídos
